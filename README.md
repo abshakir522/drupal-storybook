@@ -1,5 +1,7 @@
 # Zyrous Gesso
 
+Zyrous base theme package is hosted on [Packagist] (https://packagist.org/packages/zyrous/drupal-theme-base)
+Zyrous base theme repo is hosted on [Bitbucket] (https://bitbucket.org/zyrous/drupal-theme)
 Zyrous Gesso is a [Sass](http://sass-lang.com/)-based starter theme that outputs
 accessible HTML5 markup. It uses a mobile-first responsive approach and
 leverages [SMACSS](https://smacss.com/) to organize styles. This encourages a
