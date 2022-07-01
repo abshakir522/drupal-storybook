@@ -1,0 +1,24 @@
+name: example
+type: theme
+base theme: drupal_theme_base
+description: "Storybook-based starter theme"
+package: Custom
+core_version_requirement: ^8.9 || ^9
+libraries:
+  - example/global
+ckeditor_stylesheets:
+  - //fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap
+  - dist/css/editor-styles.css
+regions:
+  page_top: "Page top"
+  header: Header
+  navigation: "Main navigation"
+  breadcrumb: Breadcrumbs
+  help: Help
+  preface: Preface
+  status: "Status messages & Tabs"
+  content: Content
+  postscript: Postscript
+  footer: Footer
+  disabled: Disabled
+  page_bottom: "Page bottom"

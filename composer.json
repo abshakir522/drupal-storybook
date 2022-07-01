@@ -1,0 +1,31 @@
+{
+    "name": "zyrous/drupal-theme-base",
+    "description": "This is used to create base theme based on storybook",
+    "type": "drupal-custom-theme",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Riaz Afridi",
+            "email": "riaz.afridi@zyrous.com"
+        }
+    ],
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://packages.drupal.org/8"
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "zyrous/drupal-theme-base",
+          "version": "master",
+          "type": "drupal-custom-theme",
+          "source": {
+            "type": "git",
+            "url": "git@bitbucket.org:zyrous/drupal-theme-base.git",
+            "reference": "master"
+          }
+        }
+      }
+    ]
+  }
