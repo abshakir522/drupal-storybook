@@ -4,21 +4,12 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 ## Ignore compiled files
-dist/css
-dist/js
-dist/fonts/*
 ## To unignore fonts placed in the dist/fonts directory, uncomment and update
 ## !dist/fonts/[DIRECTORY_NAME]/
-dist/design-tokens.js
-dist/images/backgrounds
-dist/images/sprite.artifact.svg
-source/00-config/_design-tokens.artifact.scss
-source/00-config/_GESSO.es6.js
 storybook
 
 # Node artifact files
 node_modules/
-dist/
 
 # Compiled Java class files
 *.class
@@ -34,7 +25,6 @@ dist/
 
 # Maven
 target/
-dist/
 
 # JetBrains IDE
 .idea/
