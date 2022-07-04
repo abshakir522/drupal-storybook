@@ -27,5 +27,9 @@
           }
         }
       }
-    ]
-  }
+    ],
+    "require": {
+        "drupal/twig_tweak": "^3.1",
+        "drupal/components": "^2.4"
+    }
+}
