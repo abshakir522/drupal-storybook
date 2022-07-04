@@ -9,7 +9,11 @@ import uniqueId from '../lib/uniqueId';
 
 import '../dist/css/styles.css';
 import './_drupal';
+import sprite from '../dist/images/sprite.artifact.svg';
 global.once = once;
+import jquery from 'jquery';
+global.$ = jquery;
+global.jQuery = jquery;
 
 function setupTwig(twig) {
   twig.cache();
@@ -44,3 +48,11 @@ export const parameters = {
     },
   },
 };
+
+fetch(sprite)
+    .then(r => r.text())
+    .then(text => {
+        let el = document.querySelector('.svg-sprite');
+        el.innerHTML = text + el.innerHTML;
+    })
+    .catch(console.error.bind(console));

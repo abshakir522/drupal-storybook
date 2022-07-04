@@ -5,7 +5,7 @@ description_display: 'after'
 type: 'checkbox'
 id: 'checkbox'
 description:
-  content: 'The description for this form field.'
+  # content: 'The description for this form field.'
 is_checked: false
 is_disabled: false
 is_required: false

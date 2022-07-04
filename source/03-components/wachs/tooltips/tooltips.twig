@@ -1,0 +1,39 @@
+{% set classes = [
+  'c-tooltips',
+  modifier_classes ? modifier_classes : ''
+] %}
+
+<div {{ add_attributes({ class: classes }) }}>
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary',
+      'text': 'Tooltip primary',
+      'is_demo': false,
+      'is_icon': false,
+      'attr_string': 'data-tippy-content="Tooltip primary"',
+      'is_button_tag': true
+    } %}
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary',
+      'text': 'Tooltip left',
+      'is_demo': false,
+      'is_icon': false,
+      'attr_string': 'data-tippy-content="Tooltip" data-placement="left"',
+      'is_button_tag': true
+    } %}
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary',
+      'text': 'Tooltip right',
+      'is_demo': false,
+      'is_icon': false,
+      'attr_string': 'data-tippy-content="Tooltip" data-placement="right"',
+      'is_button_tag': true
+    } %}
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary',
+      'text': 'Tooltip bottom',
+      'is_demo': false,
+      'is_icon': false,
+      'attr_string': 'data-tippy-content="Tooltip" data-placement="bottom"',
+      'is_button_tag': true
+    } %}
+</div>

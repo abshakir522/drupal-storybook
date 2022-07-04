@@ -1,0 +1,88 @@
+// @file
+// Component: c-popup
+// stylelint-disable
+@use '00-config' as *;
+.swal2-container.swal2-center {
+    .swal2-popup {
+        max-width: 337px !important;
+        display: block !important;
+        position: relative;
+        color: gesso-color('zy', 'border-dark');
+        padding: 0;
+        .swal2-title {
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 400;
+            text-align: left;
+            display: inline-block;
+            padding: 26px 26px 12.5px;
+            // padding-left: 10px;
+            &::before {
+                content: "";
+                display: inline-block;
+                @include svg-background(plus-info);
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin-right: 10px;
+                vertical-align: sub;
+            }
+        }
+        &.popup-success {
+            .swal2-title {
+                &::before {
+                    @include svg-background(plus-success);
+                }
+            }
+        }
+        &.popup-warning {
+            .swal2-title {
+                &::before {
+                    @include svg-background(plus-warning);
+                }
+            }
+        }
+        &.popup-danger {
+            .swal2-title {
+                &::before {
+                    @include svg-background(plus-danger);
+                }
+            }
+        }
+        button.swal2-close {
+            width: 18px;
+            height: 18px;
+            font-size: 22px;
+            font-family: serif;
+            position: absolute;
+            right: 20px;
+            top: 24px;
+            color: gesso-color('zy', 'border-dark');
+            &:hover {
+                color: #ccc;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .swal2-html-container {
+            margin: 0;
+            padding: 16px 24px;
+            justify-content: flex-start;
+            text-align: left;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .swal2-actions {
+            padding: 16px 24px 24px;
+            margin: 0;
+            button {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+// stylelint-enable

@@ -8,7 +8,7 @@ import { Checkbox } from '../form-item--checkbox/form-item--checkbox.stories.jsx
 import data from './form-item--checkboxes.yml';
 
 const settings = {
-  title: 'Components/Form Item/Checkboxes',
+  title: 'Components/wachs/Form Item/Checkboxes',
 };
 
 const checkboxesChildren = ReactDOMServer.renderToStaticMarkup(

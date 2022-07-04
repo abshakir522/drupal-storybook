@@ -1,0 +1,4 @@
+---
+type: 'status'
+color: default
+messages: ['You have a new maintenance requirement on your current route. <a href="#">Check your map for updated locations.</a>']

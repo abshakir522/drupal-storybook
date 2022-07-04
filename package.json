@@ -86,7 +86,9 @@
     "svg-sprite-loader": "^6.0.9",
     "svg-transform-loader": "^2.0.13",
     "svgo-loader": "^3.0.0",
+    "sweetalert2": "^11.4.19",
     "terser-webpack-plugin": "^5.2.4",
+    "tippy.js": "^6.3.7",
     "twig": "^1.15.4",
     "webpack-merge": "^5.7.3",
     "yaml": "^1.10.2"

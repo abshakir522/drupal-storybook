@@ -1,0 +1,35 @@
+// @file
+// Component: c-stepper
+// stylelint-disable
+@use '00-config' as *;
+.mdl-stepper {
+    .mdl-step {
+        height: unset;
+    }
+}
+.input-stepper {
+    button[disabled] {
+        svg, span {
+            visibility: hidden;
+        }
+        @include svg-background(check);
+    }
+    button {
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        background-position: center;
+    }
+    input {
+        width: 56px;
+        height: 40px;
+        background: gesso-color(zy, light);
+        border: 0.2px solid gesso-color(zy, border-dark);
+        border-radius: 8px;
+        text-align: center;
+        color: gesso-color(zy, smoke-gray);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+// stylelint-enable

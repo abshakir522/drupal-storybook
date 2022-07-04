@@ -1,17 +1,17 @@
 // Component: Breadcrumb
-
+// stylelint-disable
 @use '00-config' as *;
 
-$breadcrumb-background-color: gesso-color(ui, generic, accent-dark) !default;
-$breadcrumb-divider-color: gesso-color(ui, generic, border-light) !default;
-$breadcrumb-link-color: gesso-color(ui, generic, text-light) !default;
-$breadcrumb-text-color: gesso-color(text, on-dark) !default;
+$breadcrumb-background-color: gesso-color('zy', 'light');//gesso-color(ui, generic, accent-dark) !default;
+$breadcrumb-divider-color: gesso-color('zy', 'smoke-gray');//gesso-color(ui, generic, border-light) !default;
+$breadcrumb-link-color: gesso-color('zy', 'base');//gesso-color(ui, generic, text-light) !default;
+$breadcrumb-text-color: gesso-color('zy', 'smoke-gray');//gesso-color(text, on-dark) !default;
 
 .c-breadcrumb {
   @include clearfix();
   background-color: $breadcrumb-background-color;
   color: $breadcrumb-text-color;
-  font-size: rem(gesso-font-size(2));
+  font-size: 18px;
   margin: gesso-spacing(4) 0;
   min-height: rem(40px);
   padding-bottom: gesso-spacing(2);
@@ -25,20 +25,38 @@ $breadcrumb-text-color: gesso-color(text, on-dark) !default;
 .c-breadcrumb__list {
   @include list-inline();
   margin-bottom: 0;
+  .c-breadcrumb__item {
+    display: inline-block;
+  }
 }
 
 .c-breadcrumb__item {
   margin-right: 0.75em;
-
+  font-size: 18px;
+  line-height: 24px;
+  a {
+    display: inline-block;
+    line-height: inherit;
+  }
   &::after {
     color: $breadcrumb-divider-color;
     content: '/';
     margin-left: 0.75em;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 20px;
   }
 
   &:last-child::after {
     content: '';
     margin-left: 0;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: sub;
   }
 }
 
@@ -66,3 +84,4 @@ $breadcrumb-text-color: gesso-color(text, on-dark) !default;
   @include link($breadcrumb-link-color, $breadcrumb-text-color);
   text-decoration: none;
 }
+// stylelint-enable

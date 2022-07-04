@@ -8,7 +8,7 @@ import { Radio } from '../form-item--radio/form-item--radio.stories.jsx';
 import fieldsetTwigTemplate from '../../fieldset/fieldset.twig';
 
 const settings = {
-  title: 'Components/Form Item/Radios',
+  title: 'Components/wachs/Form Item/Radios',
 };
 
 const radiosChildren = ReactDOMServer.renderToStaticMarkup(

@@ -62,8 +62,34 @@ gesso:
     desktop-lg: 1200px
     widescreen: 1400px
   colors:
+    zy:
+      light: '#fff'
+      dark: '#000'
+      border-dark: '#010000'
+      smoke-gray: '#7E889C'
+      base: '#5149FF'
+      base-hover: '#413ACC'
+      base-focus: '#312C99'
+      base-32: '#C7C5FF'
+      base-8: '#F1F0FF'
+      success: '#1DD189'
+      success-hover: '#1CC782'
+      success-focus: '#1ABC7B'
+      success-32: '#B7F0D9'
+      success-8: '#EDFBF6'
+      warning: '#F7B500'
+      warning-hover: '#F8C000'
+      warning-focus: '#F9CB00'
+      warning-32: '#FCE7AD'
+      warning-8: '#FEF9EB'
+      danger: '#F42121'
+      danger-hover: '#DC1E1E'
+      danger-focus: '#C31A1A'
+      danger-32: '#FCB8B8'
+      danger-8: '#FEEDED'
+      disabled: '#D6D9DF'
     text:
-      primary: grayscale.gray-7
+      primary: '#010000'
       secondary: grayscale.gray-5
       on-light: grayscale.gray-7
       on-dark: grayscale.white
@@ -171,7 +197,7 @@ gesso:
     font-family:
       primary:
         name: Primary
-        stack: '"Source Sans Pro", Arial, sans-serif'
+        stack: '"DM Sans", sans-serif'
       system:
         name: System
         stack: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen-Sans", Ubuntu, Cantarell, "Fira Sans", Droid Sans, sans-serif'
@@ -183,10 +209,10 @@ gesso:
       1: 12px
       2: 14px
       3: 16px
-      4: 20px
-      5: 25px
-      6: 31.25px
-      7: 39.06625px
+      4: 18px
+      5: 24px
+      6: 32px
+      7: 40px
       8: 48.8281px
       9: 61.0352px
       10: 76.2939px
@@ -237,11 +263,22 @@ gesso:
       light: 300
       regular: 400
       semibold: 600
+      medium: 600
       bold: 700
+      
     line-height:
       tight: 1.1
       base: 1.45
       loose: 1.7
+      h1: 56px
+      h2: 46px
+      h3: 35px
+      body-large: 27px
+      body-medium: 25px
+      body-small: 14px
+      body-extra-samll: 12px
+      normal: 18px
+      small: 16px
     display:
       display:
         color: text.primary

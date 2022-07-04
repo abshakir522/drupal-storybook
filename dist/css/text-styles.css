@@ -7,8 +7,8 @@
 }
 
 .gesso-storybook-text-style__preview--display {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   font-size: clamp(2.2807rem, 1.5584735887rem + 3.2098951613vw, 4.76836875rem);
@@ -16,8 +16,8 @@
 }
 
 .gesso-storybook-text-style__preview--h1 {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   font-size: clamp(1.80203125rem, 1.4392078629rem + 1.6125483871vw, 3.05175625rem);
@@ -25,8 +25,8 @@
 }
 
 .gesso-storybook-text-style__preview--h2 {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   font-size: clamp(1.60180625rem, 1.3580514113rem + 1.0833548387vw, 2.44140625rem);
@@ -34,8 +34,8 @@
 }
 
 .gesso-storybook-text-style__preview--h3 {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   font-size: clamp(1.42383125rem, 1.2701653226rem + 0.6829596774vw, 1.953125rem);
@@ -43,8 +43,8 @@
 }
 
 .gesso-storybook-text-style__preview--h4 {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   line-height: 1.45;
   font-size: clamp(1.265625rem, 1.1794354839rem + 0.3830645161vw, 1.5625rem);
@@ -52,16 +52,16 @@
 }
 
 .gesso-storybook-text-style__preview--h5 {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   line-height: 1.45;
   font-size: 1rem;
 }
 
 .gesso-storybook-text-style__preview--h6 {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 1.7;
@@ -71,31 +71,31 @@
 
 .gesso-storybook-text-style__preview--blockquote {
   color: #0071BC;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 1.5625rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.45;
 }
 
 .gesso-storybook-text-style__preview--body {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.45;
 }
 
 .gesso-storybook-text-style__preview--body-large {
-  color: #1b1b1b;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 1.25rem;
+  color: #010000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.45;
 }
 
 .gesso-storybook-text-style__preview--cite {
   color: #5c5c5c;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;

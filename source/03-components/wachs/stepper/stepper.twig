@@ -1,0 +1,67 @@
+{{ attach_library('wachs_theme/stepper') }}
+{% set classes = [
+  'mdl-stepper',
+  modifier_classes ? modifier_classes : '',
+  is_horizontal ? 'mdl-stepper--horizontal' : ''
+
+] %}
+{% if is_input %}
+  <div class="input-stepper">
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary',
+      'is_demo': false,
+      'attr_string': 'data-input-stepper-decrease ',
+      'is_icon': true,
+      'icon_name': 'minus-circle',
+      'icon_position': 'left',
+      'icon_only': 'true',
+      'is_button_tag': true
+    } %}
+		<input type="text" min="{{ input_min_value }}" max="{{ input_max_value }}" value="{{ value }}">
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary',
+      'is_demo': false,
+      'attr_string': 'data-input-stepper-increase ',
+      'is_icon': true,
+      'icon_name': 'plus-circle',
+      'icon_position': 'left',
+      'icon_only': 'true',
+      'is_button_tag': true
+    } %}
+	</div>
+{% else %}
+<ul {{ add_attributes({ class: classes }) }}>
+  {% block steps %}
+    {% if is_demo %}
+      {% embed "@components/wachs/stepper/step.twig" with {
+     'name' : 'Review'
+        }
+      %}
+        {% block content %}
+            <input type="text">
+        {% endblock %}
+      {% endembed %}
+
+      {% embed "@components/wachs/stepper/step.twig" with {
+     'name' : 'Review'
+        }
+      %}
+        {% block content %}
+            <input type="text">
+        {% endblock %}
+      {% endembed %}
+
+      {% embed "@components/wachs/stepper/step.twig" with {
+     'name' : 'Review'
+        }
+      %}
+        {% block content %}
+            <input type="text">
+        {% endblock %}
+      {% endembed %}
+      
+    {% endif %}
+
+  {% endblock %}
+</ul>
+{% endif %}

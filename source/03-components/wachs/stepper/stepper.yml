@@ -1,0 +1,7 @@
+---
+is_horizontal: false
+is_demo: true
+is_input: false
+value: 1
+input_max_value: 10
+input_min_value: 1

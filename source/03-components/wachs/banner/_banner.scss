@@ -1,0 +1,40 @@
+// @file
+// Component: c-banner
+@use '00-config' as *;
+// stylelint-disable
+.c-message {
+    display: flex;
+    padding: 18px 26px;
+    background-color: gesso-color('zy', 'base');
+    &.success {
+        background-color: gesso-color('zy', 'success');
+    }
+    &.warning, &.c-message--warning {
+        background-color: gesso-color('zy', 'warning');
+    }
+    &.danger, &.c-message--error {
+        background-color: gesso-color('zy', 'danger');
+    }
+    .icon {
+        flex-grow: 0;
+        width: 20px;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .c-message__content {
+        flex-grow: 1;
+        color: gesso-color('zy','light');
+        padding: 0 18px;
+        font-family: gesso-font-family(primary);
+        font-size: gesso-font-size(2);
+        line-height: gesso-line-height(normal);
+        a {
+            font-weight: bold;
+            color: gesso-color('zy','light');
+            text-decoration: none;
+        }
+    }
+}
+// stylelint-enable

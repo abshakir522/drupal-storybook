@@ -1,5 +1,5 @@
 // Component: Radio Form Item
-
+// stylelint-disable
 @use '00-config' as *;
 @use '../form-item' as *;
 
@@ -12,11 +12,11 @@
     @include focus();
     appearance: none;
     background-color: gesso-color(form, background-unchecked);
-    border: 1px solid gesso-color(form, border-dark);
+    border: 1.2px solid gesso-color(zy, 'smoke-gray');
     border-radius: 50%;
     box-shadow: 0 0 0 2px transparent;
     cursor: pointer;
-    height: 18px;
+    height: 20px;
     margin-right: 3px;
     outline: none;
     position: relative;
@@ -24,12 +24,14 @@
     transition-duration: gesso-duration(short);
     transition-property: background-color, border-color, border-radius;
     transition-timing-function: gesso-easing(ease-in-out);
-    width: 18px;
-
+    width: 20px;
+    &:hover {
+      border-color: gesso-color(zy, 'base');
+    }
     &:checked {
-      background-color: gesso-color(form, background-checked);
-      border: 2px solid gesso-color(form, background-unchecked);
-      box-shadow: 0 0 0 2px gesso-color(form, background-checked);
+      background-color: gesso-color(zy, 'base');
+      border: 4px solid gesso-color(zy, 'light');
+      box-shadow: 0 0 0 2px gesso-color(zy, 'base');
     }
 
     &:disabled {
@@ -39,8 +41,11 @@
 
     + .c-form-item__label {
       cursor: pointer;
-      display: inline;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 20px;
       font-weight: gesso-font-weight(regular);
+      vertical-align: text-bottom;
     }
 
     &:disabled + .c-form-item__label {
@@ -49,3 +54,4 @@
     }
   }
 }
+// stylelint-enable

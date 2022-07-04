@@ -1,6 +1,6 @@
 .c-side-menu {
   background: #f1f1f1;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   height: 100vh;
   left: 0;
   overflow: hidden;
@@ -155,7 +155,7 @@
 }
 
 .c-side-menu__section-title {
-  font-size: 1.5625rem;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 8px 16px;
 }

@@ -6,7 +6,7 @@ import labelTemplate from '../_form-item-label.twig';
 import data from './form-item--checkbox.yml';
 
 const settings = {
-  title: 'Components/Form Item/Checkbox',
+  title: 'Components/wachs/Form Item/Checkbox',
   argTypes: {
     label_display: {
       options: ['before', 'after', 'invisible', 'hidden'],

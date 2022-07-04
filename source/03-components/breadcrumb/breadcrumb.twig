@@ -1,6 +1,7 @@
 {% set classes = [
   'c-breadcrumb',
   modifier_classes ? modifier_classes : '',
+  link_icon ? 'with-icons',
 ]|join(' ')|trim %}
 
 {% set title_classes = [
@@ -28,6 +29,9 @@
     <ol class="c-breadcrumb__list">
       {% for item in breadcrumb %}
         <li class="c-breadcrumb__item">
+        {% if link_icon and icon_name %}
+          <svg><use xlink:href="#{{ icon_name }}"></use></svg>
+        {% endif %}
           {% if item.url %}
             <a class="c-breadcrumb__link" href="{{ item.url }}">{{ item.text }}</a>
           {% else %}

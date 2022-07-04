@@ -115,6 +115,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/check.svg":
+/*!******************************************************!*\
+  !*** ./source/images/_sprite-source-files/check.svg ***!
+  \******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "check-usage",
+      viewBox: "0 0 16 16",
+      url: __webpack_require__.p + "sprite.artifact.svg#check-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/close.svg":
 /*!******************************************************!*\
   !*** ./source/images/_sprite-source-files/close.svg ***!
@@ -125,7 +144,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
       id: "close-usage",
-      viewBox: "0 0 22 22",
+      viewBox: "0 0 12 12",
       url: __webpack_require__.p + "sprite.artifact.svg#close-usage",
       toString: function () {
         return this.url;
@@ -165,6 +184,82 @@ __webpack_require__.r(__webpack_exports__);
       id: "linkedin-usage",
       viewBox: "0 0 24 24",
       url: __webpack_require__.p + "sprite.artifact.svg#linkedin-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/message-icon.svg":
+/*!*************************************************************!*\
+  !*** ./source/images/_sprite-source-files/message-icon.svg ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "message-icon-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#message-icon-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/minus-circle.svg":
+/*!*************************************************************!*\
+  !*** ./source/images/_sprite-source-files/minus-circle.svg ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "minus-circle-usage",
+      viewBox: "0 0 16 16",
+      url: __webpack_require__.p + "sprite.artifact.svg#minus-circle-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/plus-circle-2.svg":
+/*!**************************************************************!*\
+  !*** ./source/images/_sprite-source-files/plus-circle-2.svg ***!
+  \**************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "plus-circle-2-usage",
+      viewBox: "0 0 18 18",
+      url: __webpack_require__.p + "sprite.artifact.svg#plus-circle-2-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/plus-circle.svg":
+/*!************************************************************!*\
+  !*** ./source/images/_sprite-source-files/plus-circle.svg ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "plus-circle-usage",
+      viewBox: "0 0 16 16",
+      url: __webpack_require__.p + "sprite.artifact.svg#plus-circle-usage",
       toString: function () {
         return this.url;
       }
@@ -223,9 +318,14 @@ var map = {
 	"./angle-left.svg": "./source/images/_sprite-source-files/angle-left.svg",
 	"./angle-right.svg": "./source/images/_sprite-source-files/angle-right.svg",
 	"./angle-up.svg": "./source/images/_sprite-source-files/angle-up.svg",
+	"./check.svg": "./source/images/_sprite-source-files/check.svg",
 	"./close.svg": "./source/images/_sprite-source-files/close.svg",
 	"./facebook.svg": "./source/images/_sprite-source-files/facebook.svg",
 	"./linkedin.svg": "./source/images/_sprite-source-files/linkedin.svg",
+	"./message-icon.svg": "./source/images/_sprite-source-files/message-icon.svg",
+	"./minus-circle.svg": "./source/images/_sprite-source-files/minus-circle.svg",
+	"./plus-circle-2.svg": "./source/images/_sprite-source-files/plus-circle-2.svg",
+	"./plus-circle.svg": "./source/images/_sprite-source-files/plus-circle.svg",
 	"./rss.svg": "./source/images/_sprite-source-files/rss.svg",
 	"./twitter.svg": "./source/images/_sprite-source-files/twitter.svg",
 	"images/_sprite-source-files/angle-double-left.svg": "./source/images/_sprite-source-files/angle-double-left.svg",
@@ -234,9 +334,14 @@ var map = {
 	"images/_sprite-source-files/angle-left.svg": "./source/images/_sprite-source-files/angle-left.svg",
 	"images/_sprite-source-files/angle-right.svg": "./source/images/_sprite-source-files/angle-right.svg",
 	"images/_sprite-source-files/angle-up.svg": "./source/images/_sprite-source-files/angle-up.svg",
+	"images/_sprite-source-files/check.svg": "./source/images/_sprite-source-files/check.svg",
 	"images/_sprite-source-files/close.svg": "./source/images/_sprite-source-files/close.svg",
 	"images/_sprite-source-files/facebook.svg": "./source/images/_sprite-source-files/facebook.svg",
 	"images/_sprite-source-files/linkedin.svg": "./source/images/_sprite-source-files/linkedin.svg",
+	"images/_sprite-source-files/message-icon.svg": "./source/images/_sprite-source-files/message-icon.svg",
+	"images/_sprite-source-files/minus-circle.svg": "./source/images/_sprite-source-files/minus-circle.svg",
+	"images/_sprite-source-files/plus-circle-2.svg": "./source/images/_sprite-source-files/plus-circle-2.svg",
+	"images/_sprite-source-files/plus-circle.svg": "./source/images/_sprite-source-files/plus-circle.svg",
 	"images/_sprite-source-files/rss.svg": "./source/images/_sprite-source-files/rss.svg",
 	"images/_sprite-source-files/twitter.svg": "./source/images/_sprite-source-files/twitter.svg"
 };

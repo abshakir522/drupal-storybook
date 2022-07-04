@@ -1,0 +1,22 @@
+---
+icon_name: plus-circle-2
+title: Info Title
+message: Hello, world! This is a toast message.
+color: default #default, success, warning, danger
+# actions: [
+#   {
+#   'url': "/node/1",
+#   'text': "Secondary",
+#   'modifier_classes': 'button--secondary button-zy--small',
+#   'is_icon': false,
+#   'is_button_tag': false
+#   },
+#   {
+#   'url': "/node/1",
+#   'text': "Secondary",
+#   'color': 'warning',
+#   'modifier_classes': 'button--secondary button-zy--small',
+#   'is_icon': false,
+#   'is_button_tag': false
+#   }
+# ]

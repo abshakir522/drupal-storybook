@@ -1,0 +1,95 @@
+// @file
+// Component: c-notification
+// scss-docs-start toast-variables
+@use '00-config' as *;
+// stylelint-disable
+.toast {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.1));
+    .toast-header {
+        padding: 8px 12px;
+        background-color: gesso-color(zy, 'base-32');
+        & > * {
+            vertical-align: middle;
+        }
+        & > svg {
+            width: 16px;
+            height: 16px;
+            color: gesso-color(zy, base);
+        }
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            margin-right: auto;
+        }
+        button {
+            width: 18px;
+            height: 18px;
+            margin: 0;
+            padding: 0;
+            float: right;
+            svg {
+                width: 100%;
+                height: 100%;
+                vertical-align: baseline;
+                top: 0;
+            }
+        }
+    }
+    .toast-body {
+        clear: both;
+        padding: 8px 12px;
+        background-color: gesso-color(zy, 'base-8');
+        p {
+            margin-bottom: 0;
+        }
+        .toast-actions {
+            display: flex;
+            a, button {
+                flex-grow: 1;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+    }
+    &.success {
+        .toast-header {
+            background-color: gesso-color(zy, 'success-32');
+            & > svg {
+                color: gesso-color(zy, success);
+            }
+        }
+        .toast-body {
+            background-color: gesso-color(zy, 'success-8');
+        }
+    }
+    &.warning {
+        .toast-header {
+            background-color: gesso-color(zy, 'warning-32');
+            & > svg {
+                color: gesso-color(zy, warning);
+            }
+        }
+        .toast-body {
+            background-color: gesso-color(zy, 'warning-8');
+        }
+    }
+    &.danger {
+        .toast-header {
+            background-color: gesso-color(zy, 'danger-32');
+            & > svg {
+                color: gesso-color(zy, danger);
+            }
+        }
+        .toast-body {
+            background-color: gesso-color(zy, 'danger-8');
+        }
+    }
+}
+// stylelint-enable

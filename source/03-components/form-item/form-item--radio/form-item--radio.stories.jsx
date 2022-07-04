@@ -6,7 +6,7 @@ import labelTemplate from '../_form-item-label.twig';
 import data from './form-item--radio.yml';
 
 const settings = {
-  title: 'Components/Form Item/Radio',
+  title: 'Components/wachs/Form Item/Radio',
 };
 
 const label = args => labelTemplate({ ...args });

@@ -34,7 +34,7 @@
   border-bottom: 0.125rem solid transparent;
   border-radius: 0.0625rem;
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   padding: 0.3rem 0;
   position: relative;
@@ -67,7 +67,7 @@
   font-size: inherit;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 .c-mega-menu > .c-mega-menu__item button.c-mega-menu__link:focus {
   outline-color: #4773aa;
@@ -236,7 +236,7 @@
 .c-mega-menu__subnav .c-mega-menu__link {
   border-bottom: 0;
   color: inherit;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   position: static;
   text-decoration: none;

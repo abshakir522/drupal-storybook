@@ -2,6 +2,8 @@
 modifier_classes: ''
 title_modifier_classes: ''
 hide_title: true
+link_icon: false
+icon_name: 'message-icon'
 title_element: 'h2'
 title: 'Breadcrumb'
 breadcrumb:

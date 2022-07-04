@@ -1,0 +1,30 @@
+{% set classes = [
+  'c-notification',
+  'toast fade show',
+  color,
+  modifier_classes ? modifier_classes : ''
+] %}
+
+<div {{ add_attributes({ class: classes }) }} role="alert">
+  <div class="toast-header">
+    <svg><use xlink:href="#{{ icon_name }}"></use></svg>
+    <strong class="title">{{ title }}</strong>
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--tertiary button-zy--small close ' ~ color,
+      'is_demo': false,
+      'is_icon': true,
+      'icon_name': 'close',
+      'icon_position': 'left',
+      'icon_only': 'true',
+      'is_button_tag': true
+    } %}
+  </div>
+  <div class="toast-body">
+    <p class="toast-msg">{{ message }}</p>
+    <div class="toast-actions">
+      {% for action in actions %}
+          {% include '@components/wachs/button-zy/button-zy.twig' with action %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

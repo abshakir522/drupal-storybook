@@ -30,18 +30,21 @@ h1,
 %h1 {
   @extend %hN;
   @include display-text-style(h1);
+  font-size: gesso-font-size(7);
 }
 
 h2,
 %h2 {
   @extend %hN;
   @include display-text-style(h2);
+  font-size: gesso-font-size(6);
 }
 
 h3,
 %h3 {
   @extend %hN;
   @include display-text-style(h3);
+  font-size: gesso-font-size(5);
 }
 
 h4,

@@ -22,9 +22,10 @@
         @include focus();
         background: gesso-color(form, background-unchecked);
         border: 1px solid gesso-color(form, border-dark);
+        border-radius: 4px;
         content: '\a0';
         display: inline-block;
-        height: rem(20px);
+        height: rem(16px);
         line-height: rem(20px);
         margin-right: 0.6em;
         text-indent: 0.15em;
@@ -32,21 +33,21 @@
         transition-property: background-color, border-color, box-shadow, color,
           opacity, text-shadow, transform;
         transition-timing-function: gesso-easing(ease-in-out);
-        vertical-align: middle;
-        width: rem(20px);
+        vertical-align: sub;
+        width: rem(16px);
       }
     }
 
     &:checked + .c-form-item__label::before {
-      @include svg-background(correct);
-      background-color: gesso-color(form, background-checked);
+      @include svg-background(check-correct);
+      background-color: gesso-color(zy, 'base');
       background-position: 50%;
       background-repeat: no-repeat;
-      background-size: rem(20px);
+      background-size: 8.2px 6px;
+      border-color: gesso-color(zy, 'base');
     }
 
     &:focus + .c-form-item__label::before {
-      outline-color: gesso-color(ui, generic, focus);
     }
 
     &:disabled + .c-form-item__label {

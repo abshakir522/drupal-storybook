@@ -1,0 +1,39 @@
+{% set classes = [
+  'c-popup',
+  modifier_classes ? modifier_classes : ''
+] %}
+
+<div {{ add_attributes({ class: classes }) }}>
+  {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary',
+      'text': 'Pop up Info',
+      'is_demo': false,
+      'is_icon': false,
+      'attr_string': 'id="popup-info"',
+      'is_button_tag': true
+    } %}
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary success',
+      'text': 'Pop up Success',
+      'is_demo': false,
+      'is_icon': false,
+      'attr_string': 'id="popup-success"',
+      'is_button_tag': true
+    } %}
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary warning',
+      'text': 'Pop up Warning',
+      'is_demo': false,
+      'is_icon': false,
+      'attr_string': 'id="popup-warning"',
+      'is_button_tag': true
+    } %}
+    {% include '@components/wachs/button-zy/button-zy.twig' with {
+      'modifier_classes': 'button--primary danger',
+      'text': 'Pop up Danger',
+      'is_demo': false,
+      'is_icon': false,
+      'attr_string': 'id="popup-danger"',
+      'is_button_tag': true
+    } %}
+</div>

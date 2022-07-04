@@ -1,0 +1,29 @@
+<li class="mdl-step">
+    <span class="mdl-step__label">
+        <span class="mdl-step__title">
+            <span class="mdl-step__title-text">{{ name }}</span>
+            {% if summary %}
+              <span class="mdl-step__title-message">{{ summary }}</span>
+            {% endif %}
+        </span>
+    </span>
+    <div class="mdl-step__content">
+        {% block content %}
+            {{ step_content }}
+        {% endblock %}
+    </div>
+    <div class="mdl-step__actions">
+        {% if action_continue %}
+            <button data-stepper-continue>Continue</button>
+        {% endif %}
+        {% if action_cancel %}
+            <button data-stepper-cancel>Cancel</button>
+        {% endif %}
+        {% if action_back %}
+            <button data-stepper-back>Back</button>
+        {% endif %}
+        {% if action_skip %}
+            <button data-stepper-skip>Skip</button>
+        {% endif %}
+    </div>
+</li>
