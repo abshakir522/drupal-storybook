@@ -1,0 +1,1 @@
+{"version":3,"file":"css/spaces.css","mappings":"AACA;EACI;AAAJ,C","sources":["webpack://gesso/./source/spaces.scss"],"sourcesContent":["// stylelint-disable\n.svg-sprite {\n    display: none;\n}"],"names":[],"sourceRoot":""}
