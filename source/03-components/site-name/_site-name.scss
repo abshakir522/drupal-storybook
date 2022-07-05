@@ -4,9 +4,13 @@
 
 .c-site-name {
   display: inline-block;
+  padding-left: 7px;
+  text-decoration: none;
 }
 
 .c-site-name__text {
-  @include display-text-style(h1);
-  margin-bottom: rem(gesso-spacing(2));
+  font-size: gesso-font-size(11);
+  font-weight: gesso-font-weight(semibold);
+  line-height: gesso-line-height(logo-title);
+  margin-bottom: rem(gesso-spacing(0));
 }

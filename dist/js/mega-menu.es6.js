@@ -273,7 +273,8 @@ var TYPOGRAPHY = {
     7: "40px",
     8: "48.8281px",
     9: "61.0352px",
-    10: "76.2939px"
+    10: "76.2939px",
+    11: "28px"
   },
   "responsive-font-size-min-width": "360px",
   "responsive-font-size-max-width": "1600px",
@@ -343,13 +344,14 @@ var TYPOGRAPHY = {
     h1: "56px",
     h2: "46px",
     h3: "35px",
+    "logo-title": "38px",
+    "page-title": "31px",
     "body-large": "27px",
     "body-medium": "25px",
     "body-small": "14px",
     "body-extra-samll": "12px",
     normal: "18px",
-    small: "16px",
-    "page-title": "31px"
+    small: "16px"
   },
   display: {
     display: {
