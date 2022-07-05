@@ -2917,6 +2917,9 @@ ul.toolbar-menu li {
 }
 
 .c-page-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
   margin-bottom: 2.5rem;
 }
 

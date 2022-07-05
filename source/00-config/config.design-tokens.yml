@@ -265,7 +265,7 @@ gesso:
       semibold: 600
       medium: 600
       bold: 700
-      
+
     line-height:
       tight: 1.1
       base: 1.45
@@ -279,6 +279,7 @@ gesso:
       body-extra-samll: 12px
       normal: 18px
       small: 16px
+      page-title: 31px
     display:
       display:
         color: text.primary

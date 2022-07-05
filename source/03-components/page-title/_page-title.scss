@@ -3,5 +3,8 @@
 @use '00-config' as *;
 
 .c-page-title {
+  font-size: gesso-font-size(5);
+  font-weight: gesso-font-weight(bold);
+  line-height: gesso-line-height(page-title);
   margin-bottom: rem(gesso-spacing(5));
 }

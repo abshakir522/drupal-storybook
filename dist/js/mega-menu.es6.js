@@ -348,7 +348,8 @@ var TYPOGRAPHY = {
     "body-small": "14px",
     "body-extra-samll": "12px",
     normal: "18px",
-    small: "16px"
+    small: "16px",
+    "page-title": "31px"
   },
   display: {
     display: {
