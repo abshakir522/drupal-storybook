@@ -9,6 +9,7 @@
 }
 
 .c-site-name__text {
+  color: gesso-color(text, primary);
   font-size: gesso-font-size(11);
   font-weight: gesso-font-weight(semibold);
   line-height: gesso-line-height(logo-title);

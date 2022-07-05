@@ -3141,6 +3141,7 @@ ul.toolbar-menu li {
 }
 
 .c-site-name__text {
+  color: #010000;
   font-size: 28px;
   font-weight: 600;
   line-height: 38px;
