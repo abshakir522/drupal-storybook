@@ -7,7 +7,7 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 @each $space in $spaceamounts {
   @each $side in $sides {
     .m#{str-slice($side, 0, 1)}-#{$space} {
-        margin-#{$side}: #{$space}px !important;
+        margin-#{$side}: #{$space}px;
     }
     @include breakpoint-min(gesso-breakpoint(mobile-lg)) {
         .m#{str-slice($side, 0, 1)}-md-#{$space} {
