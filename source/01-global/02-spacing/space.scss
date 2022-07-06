@@ -9,13 +9,13 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     .m#{str-slice($side, 0, 1)}-#{$space} {
         margin-#{$side}: #{$space}px !important;
     }
-    @include breakpoint-max(gesso-breakpoint(mobile), true) {
-        .m#{str-slice($side, 0, 1)}-sm-#{$space} {
+    @include breakpoint-max(gesso-breakpoint(desktop), true) {
+        .m#{str-slice($side, 0, 1)}-md-#{$space} {
             margin-#{$side}: #{$space}px !important;
         }
     }
-    @include breakpoint-max(gesso-breakpoint(tablet), true) {
-        .m#{str-slice($side, 0, 1)}-md-#{$space} {
+    @include breakpoint-max(gesso-breakpoint(mobile-lg), true) {
+        .m#{str-slice($side, 0, 1)}-sm-#{$space} {
             margin-#{$side}: #{$space}px !important;
         }
     }
@@ -23,15 +23,17 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     .p#{str-slice($side, 0, 1)}-#{$space} {
         padding-#{$side}: #{$space}px !important;
     }
-    @include breakpoint-max(gesso-breakpoint(mobile), true) {
-        .p#{str-slice($side, 0, 1)}-sm-#{$space} {
-            padding-#{$side}: #{$space}px !important;
-        }
-    }
-    @include breakpoint-max(gesso-breakpoint(tablet), true) {
+    @include breakpoint-max(gesso-breakpoint(desktop), true) {
         .p#{str-slice($side, 0, 1)}-md-#{$space} {
             padding-#{$side}: #{$space}px !important;
         }
     }
+    
+    @include breakpoint-max(gesso-breakpoint(mobile-lg), true) {
+        .p#{str-slice($side, 0, 1)}-sm-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+
   }
 }
