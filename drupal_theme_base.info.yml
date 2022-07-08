@@ -22,6 +22,7 @@ components:
     components: source/03-components
     templates: source/04-templates
     utility: source/06-utility
+    assets: dist
 regions:
   page_top: 'Page top'
   header: Header
@@ -30,6 +31,7 @@ regions:
   help: Help
   preface: Preface
   status: 'Status messages & Tabs'
+  sidebar_first: 'Sidebar First'
   content: Content
   postscript: Postscript
   footer: Footer

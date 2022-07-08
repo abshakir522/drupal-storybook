@@ -1,5 +1,5 @@
 // Layout: Sidebar
-
+// stylelint-disable
 @use '00-config' as *;
 $l-sidebar-bp: 900px;
 $l-sidebar-width: 300px;
@@ -66,3 +66,64 @@ $l-sidebar-gutter: rem(gesso-spacing(2));
     }
   }
 }
+.side-bar {
+  width: 200px;
+  height: calc(100vh - 64px);
+  padding: 2.1rem 0;
+  background-color: gesso-color(zy, 'light');
+  transition: all 0.5s ease;
+  border-right: 1px solid gesso-color(zy, 'border-gray');
+  white-space: nowrap;
+  overflow-x: hidden;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  .l-sidebar-first {
+    flex-grow: 1;
+  }
+  .collapse-btn {
+    flex-grow: 0;
+    background: none;
+    padding: 8px 6px;
+    padding-left: 16px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    .icon, .lbl {
+      display: inline-block;
+    }
+    .icon {
+      width: 18px;
+      height: 12px;
+      @include svg-background(menu_open);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .lbl {
+      color: gesso-color(zy, 'smoke-gray');
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+      padding-left: 11px;
+    }
+  }
+  &.collapse {
+    width: 56px;
+    .collapse-btn {
+      .icon {
+        @include svg-background(menu);
+      }
+    }
+    .tooltip {
+      display: block;
+    }
+    .features-item-text > span,
+    .collapse-btn .lbl {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+// stylelint-enable

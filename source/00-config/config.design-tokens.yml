@@ -66,6 +66,7 @@ gesso:
       light: '#fff'
       dark: '#000'
       border-dark: '#010000'
+      border-gray: '#E8E8E8'
       smoke-gray: '#7E889C'
       base: '#5149FF'
       base-hover: '#413ACC'

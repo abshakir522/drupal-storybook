@@ -23,3 +23,5 @@ Sidebar.args = { ...data };
 
 export default settings;
 export { Sidebar };
+
+import './sidebar.es6';

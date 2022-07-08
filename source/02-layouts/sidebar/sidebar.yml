@@ -1,8 +1,6 @@
 ---
 is_demo: true
-sidebar_header_content: ''
-sidebar_first_content: ''
-sidebar_main_content: ''
-sidebar_second_content: ''
+sidebar_content: '<p>Sidebar</p>'
 has_multiple_sidebar: true
+is_collapsible: true
 modifier_classes: ''

@@ -2,3 +2,12 @@
 .svg-sprite {
     display: none;
 }
+.layout-main-wrapper {
+    display: flex;
+    aside {
+        max-width: 200px;
+    }
+    main {
+        flex-grow: 1;
+    }
+}

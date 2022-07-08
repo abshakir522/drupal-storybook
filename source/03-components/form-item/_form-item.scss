@@ -1,12 +1,12 @@
 // Component: Form Item
-
+// stylelint-disable
 @use 'sass:math';
 @use '00-config' as *;
 
-$form-background-color: gesso-color(form, background) !default;
+$form-background-color: gesso-color(zy, 'light');
 $form-background-color-focus: gesso-color(form, background-active) !default;
-$form-border-color: gesso-color(form, border) !default;
-$form-border-color-focus: gesso-color(form, border-dark) !default;
+$form-border-color: gesso-color(zy, 'disabled');
+$form-border-color-focus: gesso-color(zy, 'disabled');
 $form-box-shadow-focus: gesso-box-shadow(2) !default;
 $form-disabled-opacity: 0.35 !default;
 $form-text-size: gesso-base-font-size() !default;
@@ -90,7 +90,7 @@ $form-text-size: gesso-base-font-size() !default;
   appearance: none;
   background-color: $form-background-color;
   border: 1px solid $form-border-color;
-  border-radius: 0;
+  border-radius: 4px;
   display: inline-block;
   font-size: rem($form-text-size);
   height: rem(44px);
@@ -101,11 +101,13 @@ $form-text-size: gesso-base-font-size() !default;
   transition-duration: gesso-duration(short);
   transition-property: background-color, border;
   transition-timing-function: gesso-easing(ease-in-out);
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  outline: none;
 
   &:hover,
   &:focus {
-    background-color: $form-background-color-focus;
-    border: 1px solid $form-border-color-focus;
+    border: 2px solid $form-border-color-focus;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
   }
 
   &:disabled {
@@ -127,3 +129,4 @@ $form-text-size: gesso-base-font-size() !default;
 .c-form-item__textarea {
   height: auto;
 }
+// stylelint-enable

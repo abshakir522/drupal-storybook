@@ -18,7 +18,10 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
-{% include '@components/menu/menu.twig' %}
-{# {% for item in items %}
-    {{ kint( item.attributes.class ) }}
-{% endfor %} #}
+{% include '@components/menu/sidemenu.twig' with {
+    'menu_name': menu_name,
+    'items': items,
+    'menu_class': ['features-list'],
+    'item_class': ['features-item'],
+    'link_class': ['features-item-text'],
+  }%}
