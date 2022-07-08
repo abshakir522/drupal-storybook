@@ -1,8 +1,13 @@
 ---
-text: 'Button'
-text_demo: 'Link Button'
+text: 'Confirm Booking'
 is_demo: true
 is_button_tag: true
 is_disabled: false
+is_icon: false
+icon_name: 'check'
+icon_position: 'left'
 url: '#0'
 button_type: 'submit'
+icon_only: false
+is_pill: false
+color: default #possible values = default(=no color), success, warning, danger

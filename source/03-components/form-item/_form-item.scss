@@ -9,7 +9,7 @@ $form-border-color: gesso-color(zy, 'disabled');
 $form-border-color-focus: gesso-color(zy, 'disabled');
 $form-box-shadow-focus: gesso-box-shadow(2) !default;
 $form-disabled-opacity: 0.35 !default;
-$form-text-size: gesso-base-font-size() !default;
+$form-text-size: 14px;
 
 .c-form-item {
   margin: 0 0 rem(gesso-spacing(3));
@@ -92,7 +92,7 @@ $form-text-size: gesso-base-font-size() !default;
   border: 1px solid $form-border-color;
   border-radius: 4px;
   display: inline-block;
-  font-size: rem($form-text-size);
+  font-size: 14px;
   height: rem(44px);
   line-height: math.div(22px, $form-text-size);
   margin: rem(gesso-spacing(0.5)) 0;

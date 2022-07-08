@@ -1,15 +1,36 @@
+{% set icon_position = (icon_position ? icon_position : 'left') %}
+{% set icon_name = (icon_name ? icon_name : 'check') %}
 {% set classes = [
-  'c-button',
+  'button',
+  color,
   modifier_classes ? modifier_classes : '',
+  is_icon ? 'icon-' ~ icon_position : '', 
+  is_pill ? 'pill' : '',
 ]|join(' ')|trim %}
 
+{% if is_icon %}
+  {% set text %}
+    {% if (icon_position == 'left' or icon_position == 'both') %}
+      <svg class="c-icon c-icon--pager {{ (not icon_only ? 'is-spaced-after') }}"><use xlink:href="#{{ icon_name }}"></use></svg>
+    {% endif %}
+    <span>{{ not icon_only ? text|trim }}</span>
+    {% if (icon_position == 'right' or icon_position == 'both') %}
+      <svg class="c-icon c-icon--pager {{ (not icon_only ? 'is-spaced-before') }}"><use xlink:href="#{{ icon_name }}"></use></svg>
+    {% endif %}
+  {% endset %}
+{% endif %}
+
 {% if is_button_tag %}
-  <button {{ add_attributes({ 'class': classes }) }}{% if is_disabled %} disabled{% endif %}{% if button_type %} type="{{ button_type }}"{% endif %}>{{ text }}</button>
+  <button {{ add_attributes({ 'class': classes }) }} {{ attr_string }} {% if is_disabled %} disabled{% endif %}{% if button_type %} type="{{ button_type }}"{% endif %}>
+    {{ text }}
+  </button>
 {% else %}
   {{ link(text, url, {'class': classes}) }}
 {% endif %}
 
 {% if is_demo %}
-  {{ link(text_demo, url, {'class': classes}) }}
-  <button {{ add_attributes({ 'class': classes }) }} disabled>Disabled {{ text }}</button>
+  {{ link(text, url, {'class': [classes, 'success']}) }}
+  {{ link(text, url, {'class': [classes, 'warning']}) }}
+  {{ link(text, url, {'class': [classes, 'danger']}) }}
+  <button {{ add_attributes({ 'class': classes }) }} disabled>{{ text }}</button>
 {% endif %}
