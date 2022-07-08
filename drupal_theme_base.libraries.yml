@@ -1,9 +1,11 @@
 global:
   css:
     theme:
-      //fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap: { type: external }
+      //fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap:
+        { type: external }
       dist/css/styles.css: {}
       dist/css/tooltips.css: {}
+      dist/css/space.css: {}
   js:
     dist/js/tooltips.es6.js: {}
     dist/js/sidebar.es6.js: {}
@@ -82,9 +84,9 @@ overlay_menu:
 side_menu:
   css:
     theme:
-      dist/css/side-menu.css: { }
+      dist/css/side-menu.css: {}
   js:
-    dist/js/side-menu.es6.js: { }
+    dist/js/side-menu.es6.js: {}
   dependencies:
     - drupal_theme_base/common
     - drupal_theme_base/hamburger_button
