@@ -1,5 +1,5 @@
 // Component: Checkbox Form Item
-
+// stylelint-disable
 @use '00-config' as *;
 @use '../form-item' as *;
 
@@ -7,6 +7,55 @@
   & + & {
     margin-top: -1 * gesso-spacing(2);
   }
+}
+.c-form-item--checkbox.has-no-label {
+  .c-form-item__checkbox {
+    @include visually-hidden(true);
+
+    + .custom-checkbox {
+      cursor: pointer;
+      display: block;
+      font-weight: gesso-font-weight(regular);
+
+      &::before  {
+        @include focus();
+        background: gesso-color(form, background-unchecked);
+        border: 1px solid gesso-color(form, border-dark);
+        border-radius: 4px;
+        content: '\a0';
+        display: inline-block;
+        height: rem(16px);
+        line-height: rem(20px);
+        margin-right: 0.6em;
+        text-indent: 0.15em;
+        transition-duration: gesso-duration(short);
+        transition-property: background-color, border-color, box-shadow, color,
+          opacity, text-shadow, transform;
+        transition-timing-function: gesso-easing(ease-in-out);
+        vertical-align: sub;
+        width: rem(16px);
+      }
+    }
+
+    &:checked + .custom-checkbox::before {
+      @include svg-background(check-correct);
+      background-color: gesso-color(zy, 'base');
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 10px 10px;
+      border-color: gesso-color(zy, 'base');
+    }
+
+    &:disabled + .custom-checkbox {
+      cursor: default;
+      opacity: $form-disabled-opacity;
+
+      &::before {
+        cursor: not-allowed;
+      }
+    }
+  }
+
 }
 
 .c-form-item--checkbox.has-visible-label-after {
@@ -43,13 +92,9 @@
       background-color: gesso-color(zy, 'base');
       background-position: 50%;
       background-repeat: no-repeat;
-      background-size: 8.2px 6px;
+      background-size: 10px 10px;
       border-color: gesso-color(zy, 'base');
     }
-
-    &:focus + .c-form-item__label::before {
-    }
-
     &:disabled + .c-form-item__label {
       cursor: default;
       opacity: $form-disabled-opacity;
@@ -60,3 +105,12 @@
     }
   }
 }
+.select-all .c-form-item--checkbox {
+  .c-form-item__checkbox {
+    &:checked + .c-form-item__label::before,
+    &:checked + .custom-checkbox::before {
+      @include svg-background(minus-solid);
+    }
+  }
+}
+// stylelint-enable

@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap);
 @charset "UTF-8";
 main {
+  background-color: #e5e5e5;
   display: block;
 }
 
@@ -370,7 +371,7 @@ a {
   outline: 2px solid transparent;
   outline-offset: 2px;
   background-color: transparent;
-  color: #0071BC;
+  color: #010000;
   -webkit-text-decoration-skip: objects;
   transition-duration: 200ms;
   transition-property: background-color, border-color, color, outline-color;
@@ -386,10 +387,10 @@ a:visited {
   color: #205493;
 }
 a:hover, a:focus {
-  color: #205493;
+  color: #5149FF;
 }
 a:active {
-  color: #205493;
+  color: #5149FF;
 }
 @media print {
   a, a:visited {
@@ -454,7 +455,7 @@ sup {
 }
 
 blockquote {
-  color: #0071BC;
+  color: #010000;
   font-family: "DM Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -581,8 +582,16 @@ table {
 
 td {
   background-color: #ffffff;
-  border: 1px solid #5c5c5c;
   padding: 1rem;
+}
+
+td.views-field-views-bulk-operations-bulk-form,
+th.views-field-views-bulk-operations-bulk-form {
+  width: 16px;
+}
+td.views-field-views-bulk-operations-bulk-form label::before,
+th.views-field-views-bulk-operations-bulk-form label::before {
+  margin-right: 0 !important;
 }
 
 tfoot td,
@@ -592,14 +601,30 @@ tfoot th {
 
 th {
   background-color: #ffffff;
-  border: 1px solid #5c5c5c;
-  padding: 1rem;
+  padding-left: 1rem;
   text-align: left;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #7E889C;
 }
 
-thead td,
-thead th {
-  background-color: #f1f1f1;
+tr {
+  border-top: 1px solid #E8E8E8;
+}
+@media print {
+  tr {
+    page-break-inside: avoid;
+  }
+}
+
+thead::before {
+  height: 8px;
+  display: table-row;
+  content: "";
+}
+thead tr {
+  border-top: none;
 }
 @media print {
   thead {
@@ -607,10 +632,10 @@ thead th {
   }
 }
 
-@media print {
-  tr {
-    page-break-inside: avoid;
-  }
+tbody::before {
+  height: 8px;
+  display: table-row;
+  content: "";
 }
 
 button {
@@ -699,8 +724,8 @@ video {
 }
 @media (min-width: 64em) {
   .l-constrain {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .l-constrain .l-constrain {
@@ -2502,6 +2527,59 @@ ul.toolbar-menu li {
   margin-top: -16px;
 }
 
+.c-form-item--checkbox.has-no-label .c-form-item__checkbox {
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  width: 1px !important;
+  word-wrap: normal !important;
+}
+.c-form-item--checkbox.has-no-label .c-form-item__checkbox + .custom-checkbox {
+  cursor: pointer;
+  display: block;
+  font-weight: 400;
+}
+.c-form-item--checkbox.has-no-label .c-form-item__checkbox + .custom-checkbox::before {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background: #ffffff;
+  border: 1px solid #5c5c5c;
+  border-radius: 4px;
+  content: " ";
+  display: inline-block;
+  height: 1rem;
+  line-height: 1.25rem;
+  margin-right: 0.6em;
+  text-indent: 0.15em;
+  transition-duration: 200ms;
+  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: sub;
+  width: 1rem;
+}
+.c-form-item--checkbox.has-no-label .c-form-item__checkbox + .custom-checkbox::before:focus {
+  outline-color: #4773aa;
+}
+.c-form-item--checkbox.has-no-label .c-form-item__checkbox + .custom-checkbox::before:focus:not(:focus-visible) {
+  outline-color: transparent;
+}
+.c-form-item--checkbox.has-no-label .c-form-item__checkbox:checked + .custom-checkbox::before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04LjkxNDE3IDAuMjA1ODQ0QzguODU5OTQgMC4xNTExNjkgOC43OTU0MyAwLjEwNzc3MiA4LjcyNDM0IDAuMDc4MTU2OUM4LjY1MzI2IDAuMDQ4NTQxOCA4LjU3NzAxIDAuMDMzMjk0NyA4LjUwMDAxIDAuMDMzMjk0N0M4LjQyMyAwLjAzMzI5NDcgOC4zNDY3NSAwLjA0ODU0MTggOC4yNzU2NyAwLjA3ODE1NjlDOC4yMDQ1OCAwLjEwNzc3MiA4LjE0MDA3IDAuMTUxMTY5IDguMDg1ODQgMC4yMDU4NDRMMy43NDAwMSA0LjU1NzUxTDEuOTE0MTcgMi43MjU4NEMxLjg1Nzg3IDIuNjcxNDUgMS43OTE0IDIuNjI4NjkgMS43MTg1NyAyLjU5OTk5QzEuNjQ1NzQgMi41NzEyOCAxLjU2Nzk3IDIuNTU3MjEgMS40ODk2OSAyLjU1ODU2QzEuNDExNDIgMi41NTk5MiAxLjMzNDE4IDIuNTc2NjcgMS4yNjIzOSAyLjYwNzg4QzEuMTkwNTkgMi42MzkwOCAxLjEyNTY1IDIuNjg0MTIgMS4wNzEyNiAyLjc0MDQzQzEuMDE2ODcgMi43OTY3MyAwLjk3NDEwMSAyLjg2MzIgMC45NDUzOTggMi45MzYwM0MwLjkxNjY5NiAzLjAwODg2IDAuOTAyNjIgMy4wODY2MyAwLjkwMzk3NCAzLjE2NDkxQzAuOTA1MzI4IDMuMjQzMTggMC45MjIwODYgMy4zMjA0MiAwLjk1MzI5MSAzLjM5MjIxQzAuOTg0NDk1IDMuNDY0MDEgMS4wMjk1NCAzLjUyODk1IDEuMDg1ODQgMy41ODMzNEwzLjMyNTg0IDUuODIzMzRDMy4zODAwNyA1Ljg3ODAyIDMuNDQ0NTkgNS45MjE0MSAzLjUxNTY3IDUuOTUxMDNDMy41ODY3NSA1Ljk4MDY1IDMuNjYzIDUuOTk1ODkgMy43NDAwMSA1Ljk5NTg5QzMuODE3MDEgNS45OTU4OSAzLjg5MzI2IDUuOTgwNjUgMy45NjQzNCA1Ljk1MTAzQzQuMDM1NDMgNS45MjE0MSA0LjA5OTk0IDUuODc4MDIgNC4xNTQxNyA1LjgyMzM0TDguOTE0MTcgMS4wNjMzNEM4Ljk3MzM4IDEuMDA4NzIgOS4wMjA2NCAwLjk0MjQyMiA5LjA1Mjk2IDAuODY4NjMxQzkuMDg1MjggMC43OTQ4MzkgOS4xMDE5NyAwLjcxNTE1MyA5LjEwMTk3IDAuNjM0NTk0QzkuMTAxOTcgMC41NTQwMzQgOS4wODUyOCAwLjQ3NDM0OCA5LjA1Mjk2IDAuNDAwNTU3QzkuMDIwNjQgMC4zMjY3NjUgOC45NzMzOCAwLjI2MDQ2OCA4LjkxNDE3IDAuMjA1ODQ0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
+  background-color: #5149FF;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  border-color: #5149FF;
+}
+.c-form-item--checkbox.has-no-label .c-form-item__checkbox:disabled + .custom-checkbox {
+  cursor: default;
+  opacity: 0.35;
+}
+.c-form-item--checkbox.has-no-label .c-form-item__checkbox:disabled + .custom-checkbox::before {
+  cursor: not-allowed;
+}
+
 .c-form-item--checkbox.has-visible-label-after .c-form-item__checkbox {
   clip: rect(1px, 1px, 1px, 1px) !important;
   height: 1px !important;
@@ -2544,7 +2622,7 @@ ul.toolbar-menu li {
   background-color: #5149FF;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: 8.2px 6px;
+  background-size: 10px 10px;
   border-color: #5149FF;
 }
 .c-form-item--checkbox.has-visible-label-after .c-form-item__checkbox:disabled + .c-form-item__label {
@@ -2553,6 +2631,10 @@ ul.toolbar-menu li {
 }
 .c-form-item--checkbox.has-visible-label-after .c-form-item__checkbox:disabled + .c-form-item__label::before {
   cursor: not-allowed;
+}
+
+.select-all .c-form-item--checkbox .c-form-item__checkbox:checked + .c-form-item__label::before, .select-all .c-form-item--checkbox .c-form-item__checkbox:checked + .custom-checkbox::before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuMS4xIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIyIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDAwIDI4OGgtMzUyYy0xNy42OSAwLTMyLTE0LjMyLTMyLTMyLjAxczE0LjMxLTMxLjk5IDMyLTMxLjk5aDM1MmMxNy42OSAwIDMyIDE0LjMgMzIgMzEuOTlTNDE3LjcgMjg4IDQwMCAyODh6Ii8+PC9zdmc+);
 }
 
 .c-form-item--checkboxes {
@@ -3120,13 +3202,13 @@ ul.toolbar-menu li {
 .c-pager__link--next,
 .c-pager__link--last {
   background-color: transparent;
-  color: #0071BC;
+  color: #010000;
 }
 .c-pager__link--first:visited,
 .c-pager__link--previous:visited,
 .c-pager__link--next:visited,
 .c-pager__link--last:visited {
-  color: #0071BC;
+  color: #010000;
 }
 .c-pager__link--first:hover, .c-pager__link--first:focus,
 .c-pager__link--previous:hover,
@@ -3136,7 +3218,7 @@ ul.toolbar-menu li {
 .c-pager__link--last:hover,
 .c-pager__link--last:focus {
   background-color: transparent;
-  color: #205493;
+  color: #5149FF;
   text-decoration: underline;
 }
 .c-pager__link--first:active,
@@ -3144,7 +3226,7 @@ ul.toolbar-menu li {
 .c-pager__link--next:active,
 .c-pager__link--last:active {
   background-color: transparent;
-  color: #205493;
+  color: #5149FF;
   text-decoration: underline;
 }
 
@@ -3200,7 +3282,7 @@ ul.toolbar-menu li {
   text-decoration: none;
 }
 .c-readmore-link:hover path, .c-readmore-link:focus path {
-  fill: #205493;
+  fill: #5149FF;
 }
 
 .c-readmore-link__icon {
@@ -3211,7 +3293,7 @@ ul.toolbar-menu li {
   width: 28px;
 }
 .c-readmore-link__icon path {
-  fill: #0071BC;
+  fill: #010000;
 }
 
 .c-rss-feed {

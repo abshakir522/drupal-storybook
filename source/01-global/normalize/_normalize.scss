@@ -3,8 +3,9 @@
 // version 8.0.1
 
 @use '00-config' as *;
-
+// stylelint-disable
 main {
+  background-color: #e5e5e5;
   display: block;
 }
 
@@ -146,7 +147,6 @@ var {
   outline-color: transparent !important;
 }
 
-// stylelint-disable-next-line selector-no-vendor-prefix
 ::-moz-selection {
   background: gesso-color(selection, background);
   color: gesso-color(selection, text);
@@ -158,3 +158,4 @@ var {
   color: gesso-color(selection, text);
   text-shadow: none;
 }
+// stylelint-enable

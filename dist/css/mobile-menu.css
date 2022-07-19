@@ -129,8 +129,8 @@ button.c-mobile-menu__link {
 }
 @media (min-width: 64em) {
   .c-mobile-menu__section-inner {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .c-mobile-menu__section-inner .c-mobile-menu__section-inner {

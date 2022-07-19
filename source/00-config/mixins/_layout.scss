@@ -41,8 +41,8 @@
 
   @if $margins {
     @include breakpoint(gesso-breakpoint(desktop)) {
-      padding-left: rem($margins);
-      padding-right: rem($margins);
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
 

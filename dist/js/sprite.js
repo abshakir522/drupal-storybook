@@ -191,6 +191,44 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/delete.svg":
+/*!*******************************************************!*\
+  !*** ./source/images/_sprite-source-files/delete.svg ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "delete-usage",
+      viewBox: "0 0 16 18",
+      url: __webpack_require__.p + "sprite.artifact.svg#delete-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/edit.svg":
+/*!*****************************************************!*\
+  !*** ./source/images/_sprite-source-files/edit.svg ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "edit-usage",
+      viewBox: "0 0 19 19",
+      url: __webpack_require__.p + "sprite.artifact.svg#edit-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/facebook.svg":
 /*!*********************************************************!*\
   !*** ./source/images/_sprite-source-files/facebook.svg ***!
@@ -336,6 +374,25 @@ __webpack_require__.r(__webpack_exports__);
       id: "minus-circle-usage",
       viewBox: "0 0 16 16",
       url: __webpack_require__.p + "sprite.artifact.svg#minus-circle-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/open_in_new.svg":
+/*!************************************************************!*\
+  !*** ./source/images/_sprite-source-files/open_in_new.svg ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "open_in_new-usage",
+      viewBox: "0 0 18 18",
+      url: __webpack_require__.p + "sprite.artifact.svg#open_in_new-usage",
       toString: function () {
         return this.url;
       }
@@ -531,6 +588,8 @@ var map = {
 	"./check.svg": "./source/images/_sprite-source-files/check.svg",
 	"./close.svg": "./source/images/_sprite-source-files/close.svg",
 	"./dashboard.svg": "./source/images/_sprite-source-files/dashboard.svg",
+	"./delete.svg": "./source/images/_sprite-source-files/delete.svg",
+	"./edit.svg": "./source/images/_sprite-source-files/edit.svg",
 	"./facebook.svg": "./source/images/_sprite-source-files/facebook.svg",
 	"./finance.svg": "./source/images/_sprite-source-files/finance.svg",
 	"./inspections.svg": "./source/images/_sprite-source-files/inspections.svg",
@@ -539,6 +598,7 @@ var map = {
 	"./linkedin.svg": "./source/images/_sprite-source-files/linkedin.svg",
 	"./message-icon.svg": "./source/images/_sprite-source-files/message-icon.svg",
 	"./minus-circle.svg": "./source/images/_sprite-source-files/minus-circle.svg",
+	"./open_in_new.svg": "./source/images/_sprite-source-files/open_in_new.svg",
 	"./owners.svg": "./source/images/_sprite-source-files/owners.svg",
 	"./plus-circle-2.svg": "./source/images/_sprite-source-files/plus-circle-2.svg",
 	"./plus-circle.svg": "./source/images/_sprite-source-files/plus-circle.svg",
@@ -558,6 +618,8 @@ var map = {
 	"images/_sprite-source-files/check.svg": "./source/images/_sprite-source-files/check.svg",
 	"images/_sprite-source-files/close.svg": "./source/images/_sprite-source-files/close.svg",
 	"images/_sprite-source-files/dashboard.svg": "./source/images/_sprite-source-files/dashboard.svg",
+	"images/_sprite-source-files/delete.svg": "./source/images/_sprite-source-files/delete.svg",
+	"images/_sprite-source-files/edit.svg": "./source/images/_sprite-source-files/edit.svg",
 	"images/_sprite-source-files/facebook.svg": "./source/images/_sprite-source-files/facebook.svg",
 	"images/_sprite-source-files/finance.svg": "./source/images/_sprite-source-files/finance.svg",
 	"images/_sprite-source-files/inspections.svg": "./source/images/_sprite-source-files/inspections.svg",
@@ -566,6 +628,7 @@ var map = {
 	"images/_sprite-source-files/linkedin.svg": "./source/images/_sprite-source-files/linkedin.svg",
 	"images/_sprite-source-files/message-icon.svg": "./source/images/_sprite-source-files/message-icon.svg",
 	"images/_sprite-source-files/minus-circle.svg": "./source/images/_sprite-source-files/minus-circle.svg",
+	"images/_sprite-source-files/open_in_new.svg": "./source/images/_sprite-source-files/open_in_new.svg",
 	"images/_sprite-source-files/owners.svg": "./source/images/_sprite-source-files/owners.svg",
 	"images/_sprite-source-files/plus-circle-2.svg": "./source/images/_sprite-source-files/plus-circle-2.svg",
 	"images/_sprite-source-files/plus-circle.svg": "./source/images/_sprite-source-files/plus-circle.svg",

@@ -117,7 +117,7 @@
   font-size: inherit;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
-  color: #0071BC;
+  color: #010000;
 }
 .c-side-menu__back:focus {
   outline-color: #4773aa;
@@ -151,7 +151,7 @@
   width: 0;
 }
 .c-side-menu__back:hover, .c-side-menu__back:focus {
-  color: #205493;
+  color: #5149FF;
 }
 
 .c-side-menu__section-title {

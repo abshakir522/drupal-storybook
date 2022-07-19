@@ -55,7 +55,7 @@
   font-size: inherit;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
-  color: #0071BC;
+  color: #010000;
 }
 .c-dropdown-menu > .c-dropdown-menu__item > button.c-dropdown-menu__link:focus {
   outline-color: #4773aa;
@@ -69,13 +69,13 @@
   pointer-events: none;
 }
 .c-dropdown-menu > .c-dropdown-menu__item > button.c-dropdown-menu__link:visited {
-  color: #0071BC;
+  color: #010000;
 }
 .c-dropdown-menu > .c-dropdown-menu__item > button.c-dropdown-menu__link:hover, .c-dropdown-menu > .c-dropdown-menu__item > button.c-dropdown-menu__link:focus {
-  color: #205493;
+  color: #5149FF;
 }
 .c-dropdown-menu > .c-dropdown-menu__item > button.c-dropdown-menu__link:active {
-  color: #205493;
+  color: #5149FF;
 }
 
 .c-dropdown-menu__item {

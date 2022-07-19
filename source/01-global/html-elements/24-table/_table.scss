@@ -1,5 +1,5 @@
 // HTML Element: Table
-
+// stylelint-disable
 @use '00-config' as *;
 
 caption {
@@ -21,8 +21,18 @@ table {
 
 td {
   background-color: gesso-color(table, background);
-  border: 1px solid gesso-color(table, border);
+  // border: 1px solid gesso-color(table, border);
   padding: rem(gesso-spacing(2));
+}
+td,
+th {
+  // background-color: gesso-color(table, background-head);
+  &.views-field-views-bulk-operations-bulk-form {
+    width: 16px;
+    label::before {
+      margin-right: 0 !important;
+    }
+  }
 }
 
 tfoot {
@@ -34,24 +44,44 @@ tfoot {
 
 th {
   background-color: gesso-color(table, background);
-  border: 1px solid gesso-color(table, border);
-  padding: rem(gesso-spacing(2));
+  // border: 1px solid gesso-color(table, border);
+  padding-left: rem(gesso-spacing(2));
   text-align: left;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: gesso-color('zy', 'smoke-gray');
 }
 
+tr {
+  border-top: 1px solid gesso-color('zy', 'border-gray');
+  @media print {
+    page-break-inside: avoid;
+  }
+}
 thead {
+  &::before {
+    height: 8px;
+    display: table-row;
+    content: '';
+  }
+  tr {
+    border-top: none;
+  }
   td,
   th {
-    background-color: gesso-color(table, background-head);
+    // background-color: gesso-color(table, background-head);
   }
-
   @media print {
     display: table-header-group;
   }
 }
 
-tr {
-  @media print {
-    page-break-inside: avoid;
+tbody {
+  &::before {
+      height: 8px;
+      display: table-row;
+      content: '';
   }
 }
+// stylelint-enable
