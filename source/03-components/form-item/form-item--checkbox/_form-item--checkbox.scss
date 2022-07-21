@@ -19,10 +19,10 @@
 
       &::before  {
         @include focus();
-        background: gesso-color(form, background-unchecked);
-        border: 1px solid gesso-color(form, border-dark);
-        border-radius: 4px;
-        content: '\a0';
+        background: gesso-color('zy', 'smoke-gray-16');
+        border: 1px solid gesso-color('zy', 'disabled');
+        border-radius: 2px;
+        content: '';
         display: inline-block;
         height: rem(16px);
         line-height: rem(20px);
@@ -69,10 +69,10 @@
 
       &::before {
         @include focus();
-        background: gesso-color(form, background-unchecked);
-        border: 1px solid gesso-color(form, border-dark);
-        border-radius: 4px;
-        content: '\a0';
+        background: gesso-color('zy', 'smoke-gray-16');
+        border: 1px solid gesso-color('zy', 'disabled');
+        border-radius: 2px;
+        content: '';
         display: inline-block;
         height: rem(16px);
         line-height: rem(20px);
