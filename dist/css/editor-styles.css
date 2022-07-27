@@ -1288,10 +1288,8 @@ ul.toolbar-menu li {
 }
 
 .c-breadcrumb {
-  background-color: #fff;
   color: #7E889C;
   font-size: 18px;
-  margin: 32px 0;
   min-height: 2.5rem;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -1350,6 +1348,9 @@ ul.toolbar-menu li {
   margin-right: 10px;
   vertical-align: sub;
 }
+.c-breadcrumb__item span {
+  color: #010000;
+}
 
 @media (max-width: 37.5em) {
   .c-breadcrumb__list .c-breadcrumb__item {
@@ -1369,17 +1370,17 @@ ul.toolbar-menu li {
 }
 
 .c-breadcrumb__link {
-  color: #5149FF;
+  color: #7E889C;
   text-decoration: none;
 }
 .c-breadcrumb__link:visited {
-  color: #5149FF;
+  color: #7E889C;
 }
 .c-breadcrumb__link:hover, .c-breadcrumb__link:focus {
-  color: #7E889C;
+  color: #5149FF;
 }
 .c-breadcrumb__link:active {
-  color: #7E889C;
+  color: #5149FF;
 }
 
 .c-button,
@@ -2252,7 +2253,7 @@ ul.toolbar-menu li {
   border-radius: 4px;
   display: inline-block;
   font-size: 14px;
-  height: 2.75rem;
+  height: initial;
   line-height: 1.5714285714;
   margin: 0.25rem 0;
   max-width: 100%;
