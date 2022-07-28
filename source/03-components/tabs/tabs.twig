@@ -1,0 +1,25 @@
+{% set classes = [
+  'c-tabs',
+  'tab',
+  modifier_classes ? modifier_classes : ''
+] %}
+{% set id = [
+  tab_id ? tab_id : ''
+] %}
+<div {{ add_attributes({ id: id }) }}>
+  <div {{ add_attributes({ class: classes }) }}>
+  {% for row in contents %}
+      <button id="tab-{{loop.index}}" data-target="panel-{{loop.index}}" class="tablinks">{{row.tab}}</button>
+      {% endfor %}
+    </div>
+        
+      <!-- Tab content -->
+  {% for row in contents %}
+
+    <div class="panels">
+      <div id="panel-{{loop.index}}" class="tabcontent">
+        {{row.content}}
+      </div>
+      {% endfor %}
+</div>
+

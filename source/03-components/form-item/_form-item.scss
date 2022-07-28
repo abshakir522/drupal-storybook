@@ -24,7 +24,9 @@ $form-text-size: 14px;
 .c-form-item__label {
   @extend %disabled-form-styles;
   display: block;
-  font-weight: gesso-font-weight(semibold);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .c-form-item__element {

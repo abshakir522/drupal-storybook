@@ -1,0 +1,45 @@
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  padding: 4px;
+  /* Style the buttons that are used to open the tab content */
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+}
+.tab--bg {
+  background-color: #F4F5F7;
+}
+.tab .tablinks {
+  padding: 12px 24px;
+  transition: 0.3s;
+  border: unset;
+  background-color: inherit;
+  border-radius: 8px;
+}
+.tab .tablinks:not(:last-child) {
+  margin-right: 4px;
+}
+.tab .tablinks:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.tab .tablinks.active {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(126, 136, 156, 0.48);
+}
+.tab--sm .tablinks {
+  padding: 4px 8px;
+}
+
+.panels {
+  /* Style the tab content */
+}
+.panels .tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+.panels .tabcontent.active {
+  display: block;
+}
+
+/*# sourceMappingURL=tabs.css.map*/

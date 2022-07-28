@@ -265,7 +265,7 @@ gesso:
     font-weight:
       light: 300
       regular: 400
-      semibold: 600
+      semibold: 500
       medium: 600
       bold: 700
 
