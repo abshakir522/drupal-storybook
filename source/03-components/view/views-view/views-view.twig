@@ -15,7 +15,7 @@
   {% endif %}
 
   {% if exposed %}
-    <div class="c-view__exposed">
+    <div class="c-view__exposed view-filters">
       {{- exposed -}}
     </div>
   {% endif %}
@@ -23,9 +23,11 @@
   {{ attachment_before }}
 
   {% if rows %}
+  <div class="view-content">
     {{- rows -}}
+  </div>
   {% elseif empty %}
-    <div class="c-view__empty">
+    <div class="c-view__empty view-empty">
       {{- empty -}}
     </div>
   {% endif %}
