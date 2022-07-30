@@ -308,7 +308,7 @@ h5,
 h6 {
   color: #010000;
   font-family: "DM Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.04em;
   line-height: 1.7;
   text-transform: uppercase;
@@ -428,7 +428,7 @@ cite {
   font-family: "DM Sans", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.1;
 }
@@ -2404,7 +2404,7 @@ ul.toolbar-menu li {
 .c-fieldset__legend {
   box-sizing: content-box;
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   left: -1px;
   position: absolute;
   text-indent: 0;
@@ -2519,7 +2519,7 @@ ul.toolbar-menu li {
 .c-figure__caption {
   caption-side: bottom;
   display: table-caption;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 0.5rem;
 }
 
@@ -3324,7 +3324,7 @@ ul.toolbar-menu li {
 .c-site-name__text {
   color: #010000;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 38px;
   margin-bottom: 0rem;
 }

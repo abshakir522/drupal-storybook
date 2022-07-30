@@ -335,7 +335,7 @@ var TYPOGRAPHY = {
   "font-weight": {
     light: 300,
     regular: 400,
-    semibold: 600,
+    semibold: 500,
     medium: 600,
     bold: 700
   },
@@ -401,7 +401,7 @@ var TYPOGRAPHY = {
     h6: {
       color: "#010000",
       "font-family": '"DM Sans", sans-serif',
-      "font-weight": 600,
+      "font-weight": 500,
       "letter-spacing": "-0.04em",
       "line-height": 1.7,
       "text-transform": "uppercase",
@@ -433,7 +433,7 @@ var TYPOGRAPHY = {
       "font-family": '"DM Sans", sans-serif',
       "font-size": "14px",
       "font-style": "normal",
-      "font-weight": 600,
+      "font-weight": 500,
       "letter-spacing": ".02em",
       "line-height": 1.1
     }
