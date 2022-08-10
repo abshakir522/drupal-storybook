@@ -8,29 +8,29 @@ Drupal.behaviors.popup = {
         {
           'type': 'popup-info',
           'classes':{
-            'confirm': 'button-zy  button--primary',
-            'cancel': 'button-zy  button--secondary'
+            'confirm': 'button  button--primary',
+            'cancel': 'button  button--secondary'
           }
         },
         {
           'type': 'popup-success',
           'classes':{
-            'confirm': 'button-zy  button--primary success',
-            'cancel': 'button-zy  button--secondary success'
+            'confirm': 'button  button--primary success',
+            'cancel': 'button  button--secondary success'
           }
         },
         {
           'type': 'popup-warning',
           'classes':{
-            'confirm': 'button-zy  button--primary warning',
-            'cancel': 'button-zy  button--secondary warning'
+            'confirm': 'button  button--primary warning',
+            'cancel': 'button  button--secondary warning'
           }
         },
         {
           'type': 'popup-danger',
           'classes':{
-            'confirm': 'button-zy  button--primary danger',
-            'cancel': 'button-zy  button--secondary danger'
+            'confirm': 'button  button--primary danger',
+            'cancel': 'button  button--secondary danger'
           }
         }
       ];

@@ -514,6 +514,44 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/settings.svg":
+/*!*********************************************************!*\
+  !*** ./source/images/_sprite-source-files/settings.svg ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "settings-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "sprite.artifact.svg#settings-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/tenancies.svg":
+/*!**********************************************************!*\
+  !*** ./source/images/_sprite-source-files/tenancies.svg ***!
+  \**********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "tenancies-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "sprite.artifact.svg#tenancies-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/tenant.svg":
 /*!*******************************************************!*\
   !*** ./source/images/_sprite-source-files/tenant.svg ***!
@@ -605,6 +643,8 @@ var map = {
 	"./properties.svg": "./source/images/_sprite-source-files/properties.svg",
 	"./reports.svg": "./source/images/_sprite-source-files/reports.svg",
 	"./rss.svg": "./source/images/_sprite-source-files/rss.svg",
+	"./settings.svg": "./source/images/_sprite-source-files/settings.svg",
+	"./tenancies.svg": "./source/images/_sprite-source-files/tenancies.svg",
 	"./tenant.svg": "./source/images/_sprite-source-files/tenant.svg",
 	"./tenant1.svg": "./source/images/_sprite-source-files/tenant1.svg",
 	"./twitter.svg": "./source/images/_sprite-source-files/twitter.svg",
@@ -635,6 +675,8 @@ var map = {
 	"images/_sprite-source-files/properties.svg": "./source/images/_sprite-source-files/properties.svg",
 	"images/_sprite-source-files/reports.svg": "./source/images/_sprite-source-files/reports.svg",
 	"images/_sprite-source-files/rss.svg": "./source/images/_sprite-source-files/rss.svg",
+	"images/_sprite-source-files/settings.svg": "./source/images/_sprite-source-files/settings.svg",
+	"images/_sprite-source-files/tenancies.svg": "./source/images/_sprite-source-files/tenancies.svg",
 	"images/_sprite-source-files/tenant.svg": "./source/images/_sprite-source-files/tenant.svg",
 	"images/_sprite-source-files/tenant1.svg": "./source/images/_sprite-source-files/tenant1.svg",
 	"images/_sprite-source-files/twitter.svg": "./source/images/_sprite-source-files/twitter.svg"

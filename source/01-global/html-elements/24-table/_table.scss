@@ -15,6 +15,7 @@ table {
   border-spacing: 0;
   margin-bottom: rem(gesso-spacing(2));
   min-width: 100%;
+  background-color: gesso-color(table, background);
 }
 
 // tbody {}

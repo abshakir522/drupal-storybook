@@ -381,9 +381,6 @@ a:focus {
 a:focus:not(:focus-visible) {
   outline-color: transparent;
 }
-a:visited {
-  color: #205493;
-}
 a:hover, a:focus {
   color: #5149FF;
 }
@@ -576,6 +573,7 @@ table {
   border-spacing: 0;
   margin-bottom: 1rem;
   min-width: 100%;
+  background-color: #ffffff;
 }
 
 td {
