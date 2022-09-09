@@ -42,4 +42,38 @@
  * @see html.html.twig
  */
 #}
-{% extends "page.html.twig" %}
+{% extends '@layouts/site-container/site-container.twig' %}
+
+{% block site_content %}
+  {{ page.header }}
+  {{ page.navigation }}
+  {{ page.help }}
+<div id="main-wrapper" class="layout-main-wrapper clearfix">
+  {% if page.sidebar_first %}
+  {% include '@layouts/sidebar/sidebar.twig' with {
+    'is_collapsible': true,
+    'sidebar_content': page.sidebar_first
+  } %}
+  {% endif %}
+  <main id="main" class="c-main content-type-form" role="main" tabindex="-1">
+    {% block main_content %}
+    <div class="l-constrain">
+      {{ page.breadcrumb }}
+    </div>
+      <div class="l-constrain main-content">
+        {{ page.preface }}
+        {# {% include '@components/page-title/page-title.twig' with {
+          'attributes': '',
+          'page_title': page['#title'],
+        } %} #}
+        {{ page.status }}
+        {{ page.content }}
+        {{ page.postscript }}
+      </div>
+    {% endblock %}
+  </main>
+</div>
+  
+
+  {{ page.footer }}
+{% endblock %}

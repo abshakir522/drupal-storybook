@@ -69,7 +69,7 @@ gesso:
       border-gray: '#E8E8E8'
       smoke-gray: '#7E889C'
       smoke-gray-16: '#EAECEF'
-      base: '#5149FF'
+      base: '#007AC7'
       base-hover: '#413ACC'
       base-focus: '#312C99'
       base-32: '#C7C5FF'
@@ -89,6 +89,7 @@ gesso:
       danger-focus: '#C31A1A'
       danger-32: '#FCB8B8'
       danger-8: '#FEEDED'
+      section-border: '#E4E7EC'
       disabled: '#D6D9DF'
     text:
       primary: '#010000'

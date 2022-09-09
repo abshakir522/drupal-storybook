@@ -20,6 +20,10 @@ import timeData from './form-item--time.yml';
 import urlData from './form-item--url.yml';
 import weekData from './form-item--week.yml';
 
+import { within, userEvent } from '@storybook/testing-library';
+
+import { expect } from '@storybook/jest';
+
 const settings = {
   title: 'Components/Form Item/Input',
   argTypes: {
@@ -190,6 +194,27 @@ const Text = args =>
   );
 Text.args = { ...textData };
 
+const text2Label = args => labelTemplate({ ...args });
+const text2Children = args => inputTemplate({ ...args });
+const Text2 = args =>
+  parse(
+    twigTemplate({
+      ...args,
+      label: text2Label(args),
+      children: text2Children(args),
+    })
+  );
+Text2.args = { ...textData };
+Text2.play = async ({ canvasElement }) => {
+  // Starts querying the component from its root element
+  const canvas = within(canvasElement);
+
+  // 👇 Simulate interactions with the component
+  await userEvent.type(canvas.getByTestId('test-input'), 'email@provider.com');
+
+  // See https://storybook.js.org/docs/react/es
+};
+
 const timeLabel = args => labelTemplate({ ...args });
 const timeChildren = args => inputTemplate({ ...args });
 const Time = args =>
@@ -241,6 +266,7 @@ export {
   Search,
   Telephone,
   Text,
+  Text2,
   Time,
   URL,
   Week,

@@ -8,7 +8,7 @@ Drupal.behaviors.Tabs = {
     tab.forEach(item=>{
         item.addEventListener('click',onTabClick,false);
     })
-    context.querySelector('.tablinks').click();
+    // context.querySelector('.tablinks').click();
     function onTabClick(event) {
       // deactivate existing active tabs and panel
       for (let i = 0; i < tab.length; i++) {

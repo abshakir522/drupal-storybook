@@ -35,7 +35,9 @@ Drupal.behaviors.popup = {
         }
       ];
       popupTypes.forEach(function(item){
-        document.getElementById(item.type).addEventListener('click', function(){
+        let swalTrigger = document.getElementById(item.type);
+        if (swalTrigger) {
+          swalTrigger.addEventListener('click', function(){
             Swal.fire({
                 title: "Info Title",
                 text: "Are you sure to remove this content? You can access this file for 7 days in your trash.",
@@ -53,6 +55,8 @@ Drupal.behaviors.popup = {
                 }
             });
           });
+        }
+        
       })
 
       

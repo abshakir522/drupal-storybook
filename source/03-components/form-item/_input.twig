@@ -106,4 +106,8 @@
   }) %}
 {% endif %}
 
+{% set attributes_to_add = attributes_to_add|merge({
+    'data-testid': 'test-input',
+  }) %}
+
 <input {{ add_attributes(attributes_to_add)}}>
