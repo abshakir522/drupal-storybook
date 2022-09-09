@@ -47,7 +47,6 @@
 {% block site_content %}
   {{ page.header }}
   {{ page.navigation }}
-  {{ page.breadcrumb }}
   {{ page.help }}
 <div id="main-wrapper" class="layout-main-wrapper clearfix">
   {% if page.sidebar_first %}
@@ -58,7 +57,10 @@
   {% endif %}
   <main id="main" class="c-main" role="main" tabindex="-1">
     {% block main_content %}
-      <div class="l-constrain">
+    <div class="l-constrain">
+      {{ page.breadcrumb }}
+    </div>
+      <div class="l-constrain main-content">
         {{ page.preface }}
         {# {% include '@components/page-title/page-title.twig' with {
           'attributes': '',

@@ -5,14 +5,13 @@ module.exports = {
   stories: ['../source/**/*.stories.mdx', '../source/**/*.stories.@(js|jsx)'],
   addons: [
     '@storybook/addon-links',
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        actions: false,
-      },
-    },
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
     '@storybook/addon-a11y',
   ],
+  features: {
+    interactionsDebugger: true,
+  },
   staticDirs: ['../dist'],
   webpackFinal: async (config, { configType }) => {
     config.module.rules.push({
