@@ -30,7 +30,7 @@
       position: absolute;
       left: 0;
       height: 100%;
-      border-left: 2px solid gesso-color(zy, 'base-hover');
+      border-left: 2px solid gesso-color(zy, 'base');
       border-radius: 2px;
       opacity: 0;
       visibility: hidden;
@@ -59,9 +59,9 @@
     }
     &:hover, &.is-active-trail {
       transition: 0.5s ease;
-      background-color: gesso-color(zy, 'base-8');
+      background-color: gesso-color(zy, 'base-40');
       .features-item-text {
-        color: gesso-color(zy, 'base-focus');
+        color: gesso-color(zy, 'base');
       }
       &::before {
         opacity: 1;
