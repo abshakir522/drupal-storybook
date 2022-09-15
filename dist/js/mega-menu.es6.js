@@ -108,6 +108,7 @@ const COLORS = {
     "base-focus": "#005B94",
     secondary: "#E4E7EC",
     "gray-scale-60": "#475467",
+    "gray-scale-80": "#1D2939",
     "secondary-hover": "#D0D5DD",
     "base-32": "#C7C5FF",
     "base-8": "#F1F0FF",
