@@ -210,6 +210,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/download.svg":
+/*!*********************************************************!*\
+  !*** ./source/images/_sprite-source-files/download.svg ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "download-usage",
+      viewBox: "0 0 21 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#download-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/edit.svg":
 /*!*****************************************************!*\
   !*** ./source/images/_sprite-source-files/edit.svg ***!
@@ -627,6 +646,7 @@ var map = {
 	"./close.svg": "./source/images/_sprite-source-files/close.svg",
 	"./dashboard.svg": "./source/images/_sprite-source-files/dashboard.svg",
 	"./delete.svg": "./source/images/_sprite-source-files/delete.svg",
+	"./download.svg": "./source/images/_sprite-source-files/download.svg",
 	"./edit.svg": "./source/images/_sprite-source-files/edit.svg",
 	"./facebook.svg": "./source/images/_sprite-source-files/facebook.svg",
 	"./finance.svg": "./source/images/_sprite-source-files/finance.svg",
@@ -659,6 +679,7 @@ var map = {
 	"images/_sprite-source-files/close.svg": "./source/images/_sprite-source-files/close.svg",
 	"images/_sprite-source-files/dashboard.svg": "./source/images/_sprite-source-files/dashboard.svg",
 	"images/_sprite-source-files/delete.svg": "./source/images/_sprite-source-files/delete.svg",
+	"images/_sprite-source-files/download.svg": "./source/images/_sprite-source-files/download.svg",
 	"images/_sprite-source-files/edit.svg": "./source/images/_sprite-source-files/edit.svg",
 	"images/_sprite-source-files/facebook.svg": "./source/images/_sprite-source-files/facebook.svg",
 	"images/_sprite-source-files/finance.svg": "./source/images/_sprite-source-files/finance.svg",

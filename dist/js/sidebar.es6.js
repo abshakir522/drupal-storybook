@@ -107,21 +107,24 @@ __webpack_require__.r(__webpack_exports__);
 (drupal__WEBPACK_IMPORTED_MODULE_0___default().behaviors.popup) = {
   attach(context) {
     const sideBar = document.querySelector('.side-bar');
-    const sidebarLinks = sideBar.querySelectorAll('.features-item');
-    const collapseBtn = document.querySelector('#side-collapse-btn');
-    changeTippy(false);
 
-    collapseBtn.onclick = () => {
-      sideBar.classList.toggle('collapse');
+    if (sideBar) {
+      const sidebarLinks = sideBar.querySelectorAll('.features-item');
+      const collapseBtn = document.querySelector('#side-collapse-btn');
+      changeTippy(false, sidebarLinks);
 
-      if (sideBar.classList.contains('collapse')) {
-        changeTippy(true);
-      } else {
-        changeTippy(false);
-      }
-    };
+      collapseBtn.onclick = () => {
+        sideBar.classList.toggle('collapse');
 
-    function changeTippy(status) {
+        if (sideBar.classList.contains('collapse')) {
+          changeTippy(true, sidebarLinks);
+        } else {
+          changeTippy(false, sidebarLinks);
+        }
+      };
+    }
+
+    function changeTippy(status, sidebarLinks) {
       sidebarLinks.forEach(function (item) {
         if (item._tippy) {
           if (status) {
