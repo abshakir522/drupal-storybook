@@ -1036,6 +1036,13 @@ video {
   }
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
 @media (min-width: 40em) {
   .l-inline-form {
     display: flex;
@@ -1169,6 +1176,7 @@ video {
   white-space: nowrap;
   overflow-x: hidden;
   position: sticky;
+  top: 63px;
   display: flex;
   flex-direction: column;
 }

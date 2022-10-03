@@ -76,6 +76,7 @@ $l-sidebar-gutter: rem(gesso-spacing(2));
   white-space: nowrap;
   overflow-x: hidden;
   position: sticky;
+  top: 63px;
   display: flex;
   flex-direction: column;
   .l-sidebar-first {
