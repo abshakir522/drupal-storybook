@@ -172,6 +172,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/copy.svg":
+/*!*****************************************************!*\
+  !*** ./source/images/_sprite-source-files/copy.svg ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "copy-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#copy-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/dashboard.svg":
 /*!**********************************************************!*\
   !*** ./source/images/_sprite-source-files/dashboard.svg ***!
@@ -644,6 +663,7 @@ var map = {
 	"./calender.svg": "./source/images/_sprite-source-files/calender.svg",
 	"./check.svg": "./source/images/_sprite-source-files/check.svg",
 	"./close.svg": "./source/images/_sprite-source-files/close.svg",
+	"./copy.svg": "./source/images/_sprite-source-files/copy.svg",
 	"./dashboard.svg": "./source/images/_sprite-source-files/dashboard.svg",
 	"./delete.svg": "./source/images/_sprite-source-files/delete.svg",
 	"./download.svg": "./source/images/_sprite-source-files/download.svg",
@@ -677,6 +697,7 @@ var map = {
 	"images/_sprite-source-files/calender.svg": "./source/images/_sprite-source-files/calender.svg",
 	"images/_sprite-source-files/check.svg": "./source/images/_sprite-source-files/check.svg",
 	"images/_sprite-source-files/close.svg": "./source/images/_sprite-source-files/close.svg",
+	"images/_sprite-source-files/copy.svg": "./source/images/_sprite-source-files/copy.svg",
 	"images/_sprite-source-files/dashboard.svg": "./source/images/_sprite-source-files/dashboard.svg",
 	"images/_sprite-source-files/delete.svg": "./source/images/_sprite-source-files/delete.svg",
 	"images/_sprite-source-files/download.svg": "./source/images/_sprite-source-files/download.svg",
