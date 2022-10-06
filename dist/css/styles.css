@@ -1495,6 +1495,7 @@ ul.toolbar-menu li {
   text-decoration: none;
   margin: 4px;
   display: inline-block;
+  cursor: pointer;
   background-color: #007AC7;
   color: #fff;
 }
@@ -1546,7 +1547,7 @@ ul.toolbar-menu li {
 }
 .button.button--tertiary, .c-button.button--tertiary {
   background-color: transparent;
-  color: #007AC7;
+  color: #475467;
   border-color: transparent;
 }
 .button.button--tertiary[disabled], .button.button--tertiary[disabled]:hover, .button.button--tertiary[disabled]:focus, .c-button.button--tertiary[disabled], .c-button.button--tertiary[disabled]:hover, .c-button.button--tertiary[disabled]:focus {

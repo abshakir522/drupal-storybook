@@ -100,6 +100,7 @@
     text-decoration: none;
     margin: 4px;
     display: inline-block;
+    cursor: pointer;
     .c-icon {
         &.is-spaced-before {
             margin-left: 7px;
@@ -139,22 +140,6 @@
         color: gesso-color(zy, 'disabled-color');
         border-color: gesso-color(zy, disabled);
     }
-    // &.success {
-    //     background-color: gesso-color(zy, success);
-    //     border-color: transparent;
-    //     color: gesso-color(zy, light);
-    // }
-    // &.warning {
-    //     background-color: gesso-color(zy, warning);
-    //     border-color: transparent;
-    //     color: gesso-color(zy, light);
-    // }
-    // &.danger {
-    //     background-color: gesso-color(zy, danger);
-    //     border-color: transparent;
-    //     color: gesso-color(zy, light);
-    // }
-
     &.button--secondary {
         background-color: gesso-color(zy, secondary);
         color: gesso-color(zy, 'gray-scale-60');
@@ -168,70 +153,16 @@
             background-color: gesso-color(zy, 'secondary-hover');
             color: gesso-color(zy, 'gray-scale-60');
         }
-        // &.success {
-        //     border-color: gesso-color(zy, success);
-        //     color: gesso-color(zy, success);
-        // }
-        // &.warning {
-        //     border-color: gesso-color(zy, warning);
-        //     color: gesso-color(zy, warning);
-        // }
-        // &.danger {
-        //     border-color: gesso-color(zy, danger);
-        //     color: gesso-color(zy, danger);
-        // }
 
     }
     &.button--tertiary {
         background-color: transparent;
-        color: gesso-color(zy, base);
+        color: gesso-color(zy, gray-scale-60);
         border-color: transparent;
         &[disabled], &[disabled]:hover, &[disabled]:focus {
             background-color: gesso-color(zy, light);
             color: gesso-color(zy, smoke-gray);
             border-color: transparent;
         }
-        // &.success {
-        //     color: gesso-color(zy, success);
-        // }
-        // &.warning {
-        //     color: gesso-color(zy, warning);
-        // }
-        // &.danger {
-        //     color: gesso-color(zy, danger);
-        // }
     }
-    // &:not([disabled]):hover {
-    //     background-color: gesso-color(zy, 'base-hover');
-    //     color: gesso-color(zy, light) !important;
-    // }
-    // &:not([disabled]):focus {
-    //     background-color: gesso-color(zy, 'base-focus');
-    //     color: gesso-color(zy, light) !important;
-    // }
-
-    // &.success {
-    //     &:hover {
-    //         background-color: gesso-color(zy, 'success-hover');
-    //     }
-    //     &:focus {
-    //         background-color: gesso-color(zy, 'success-focus');
-    //     }
-    // }
-    // &.warning {
-    //     &:hover {
-    //         background-color: gesso-color(zy, 'warning-hover');
-    //     }
-    //     &:focus {
-    //         background-color: gesso-color(zy, 'warning-focus');
-    //     }
-    // }
-    // &.danger {
-    //     &:hover {
-    //         background-color: gesso-color(zy, 'danger-hover');
-    //     }
-    //     &:focus {
-    //         background-color: gesso-color(zy, 'danger-focus');
-    //     }
-    // }
 }
