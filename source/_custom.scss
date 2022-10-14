@@ -5,14 +5,18 @@
 }
 .layout-main-wrapper {
     display: flex;
+    background: #F3F4F6;
     aside {
         max-width: 200px;
     }
     main {
         flex-grow: 1;
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 0 16px;
         .l-constrain.main-content {
             background-color: gesso-color(background, site);
-            margin: 0 16px 16px;
+            margin: 0 auto 16px;
             padding: 24px 0 16px;
             border: 1px solid gesso-color('zy', 'section-border');
             border-radius: 4px 4px 0px 0px;

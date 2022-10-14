@@ -3596,16 +3596,20 @@ ul.toolbar-menu li {
 
 .layout-main-wrapper {
   display: flex;
+  background: #F3F4F6;
 }
 .layout-main-wrapper aside {
   max-width: 200px;
 }
 .layout-main-wrapper main {
   flex-grow: 1;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 .layout-main-wrapper main .l-constrain.main-content {
   background-color: #ffffff;
-  margin: 0 16px 16px;
+  margin: 0 auto 16px;
   padding: 24px 0 16px;
   border: 1px solid #E4E7EC;
   border-radius: 4px 4px 0px 0px;
