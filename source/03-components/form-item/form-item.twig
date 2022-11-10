@@ -56,7 +56,7 @@
   </div>
   {% endif %}
   {% if label_display in ['before', 'invisible'] %}
-    <label class="custom-checkbox" for="{{ 'edit-' ~ name|clean_class }}"></label>
+    <label class="custom-checkbox" for="{{ label['#for'] }}"></label>
   {% endif %}
 
   {% if label_display == 'after' %}
