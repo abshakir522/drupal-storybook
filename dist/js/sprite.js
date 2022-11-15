@@ -1,6 +1,25 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./source/images/_sprite-source-files/Applications_person_add.svg":
+/*!************************************************************************!*\
+  !*** ./source/images/_sprite-source-files/Applications_person_add.svg ***!
+  \************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "Applications_person_add-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#Applications_person_add-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/angle-double-left.svg":
 /*!******************************************************************!*\
   !*** ./source/images/_sprite-source-files/angle-double-left.svg ***!
@@ -127,6 +146,25 @@ __webpack_require__.r(__webpack_exports__);
       id: "calender-usage",
       viewBox: "0 0 24 24",
       url: __webpack_require__.p + "sprite.artifact.svg#calender-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/chat.svg":
+/*!*****************************************************!*\
+  !*** ./source/images/_sprite-source-files/chat.svg ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "chat-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#chat-usage",
       toString: function () {
         return this.url;
       }
@@ -298,6 +336,44 @@ __webpack_require__.r(__webpack_exports__);
       id: "finance-usage",
       viewBox: "0 0 24 24",
       url: __webpack_require__.p + "sprite.artifact.svg#finance-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/group.svg":
+/*!******************************************************!*\
+  !*** ./source/images/_sprite-source-files/group.svg ***!
+  \******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "group-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#group-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./source/images/_sprite-source-files/group_add.svg":
+/*!**********************************************************!*\
+  !*** ./source/images/_sprite-source-files/group_add.svg ***!
+  \**********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "group_add-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#group_add-usage",
       toString: function () {
         return this.url;
       }
@@ -533,6 +609,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/property_manager.svg":
+/*!*****************************************************************!*\
+  !*** ./source/images/_sprite-source-files/property_manager.svg ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "property_manager-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#property_manager-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/reports.svg":
 /*!********************************************************!*\
   !*** ./source/images/_sprite-source-files/reports.svg ***!
@@ -673,6 +768,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var map = {
+	"./Applications_person_add.svg": "./source/images/_sprite-source-files/Applications_person_add.svg",
 	"./angle-double-left.svg": "./source/images/_sprite-source-files/angle-double-left.svg",
 	"./angle-double-right.svg": "./source/images/_sprite-source-files/angle-double-right.svg",
 	"./angle-down.svg": "./source/images/_sprite-source-files/angle-down.svg",
@@ -680,6 +776,7 @@ var map = {
 	"./angle-right.svg": "./source/images/_sprite-source-files/angle-right.svg",
 	"./angle-up.svg": "./source/images/_sprite-source-files/angle-up.svg",
 	"./calender.svg": "./source/images/_sprite-source-files/calender.svg",
+	"./chat.svg": "./source/images/_sprite-source-files/chat.svg",
 	"./check.svg": "./source/images/_sprite-source-files/check.svg",
 	"./close.svg": "./source/images/_sprite-source-files/close.svg",
 	"./copy.svg": "./source/images/_sprite-source-files/copy.svg",
@@ -689,6 +786,8 @@ var map = {
 	"./edit.svg": "./source/images/_sprite-source-files/edit.svg",
 	"./facebook.svg": "./source/images/_sprite-source-files/facebook.svg",
 	"./finance.svg": "./source/images/_sprite-source-files/finance.svg",
+	"./group.svg": "./source/images/_sprite-source-files/group.svg",
+	"./group_add.svg": "./source/images/_sprite-source-files/group_add.svg",
 	"./inspections.svg": "./source/images/_sprite-source-files/inspections.svg",
 	"./inventory.svg": "./source/images/_sprite-source-files/inventory.svg",
 	"./leases.svg": "./source/images/_sprite-source-files/leases.svg",
@@ -701,6 +800,7 @@ var map = {
 	"./plus-circle-2.svg": "./source/images/_sprite-source-files/plus-circle-2.svg",
 	"./plus-circle.svg": "./source/images/_sprite-source-files/plus-circle.svg",
 	"./properties.svg": "./source/images/_sprite-source-files/properties.svg",
+	"./property_manager.svg": "./source/images/_sprite-source-files/property_manager.svg",
 	"./reports.svg": "./source/images/_sprite-source-files/reports.svg",
 	"./rss.svg": "./source/images/_sprite-source-files/rss.svg",
 	"./settings.svg": "./source/images/_sprite-source-files/settings.svg",
@@ -708,6 +808,7 @@ var map = {
 	"./tenant.svg": "./source/images/_sprite-source-files/tenant.svg",
 	"./tenant1.svg": "./source/images/_sprite-source-files/tenant1.svg",
 	"./twitter.svg": "./source/images/_sprite-source-files/twitter.svg",
+	"images/_sprite-source-files/Applications_person_add.svg": "./source/images/_sprite-source-files/Applications_person_add.svg",
 	"images/_sprite-source-files/angle-double-left.svg": "./source/images/_sprite-source-files/angle-double-left.svg",
 	"images/_sprite-source-files/angle-double-right.svg": "./source/images/_sprite-source-files/angle-double-right.svg",
 	"images/_sprite-source-files/angle-down.svg": "./source/images/_sprite-source-files/angle-down.svg",
@@ -715,6 +816,7 @@ var map = {
 	"images/_sprite-source-files/angle-right.svg": "./source/images/_sprite-source-files/angle-right.svg",
 	"images/_sprite-source-files/angle-up.svg": "./source/images/_sprite-source-files/angle-up.svg",
 	"images/_sprite-source-files/calender.svg": "./source/images/_sprite-source-files/calender.svg",
+	"images/_sprite-source-files/chat.svg": "./source/images/_sprite-source-files/chat.svg",
 	"images/_sprite-source-files/check.svg": "./source/images/_sprite-source-files/check.svg",
 	"images/_sprite-source-files/close.svg": "./source/images/_sprite-source-files/close.svg",
 	"images/_sprite-source-files/copy.svg": "./source/images/_sprite-source-files/copy.svg",
@@ -724,6 +826,8 @@ var map = {
 	"images/_sprite-source-files/edit.svg": "./source/images/_sprite-source-files/edit.svg",
 	"images/_sprite-source-files/facebook.svg": "./source/images/_sprite-source-files/facebook.svg",
 	"images/_sprite-source-files/finance.svg": "./source/images/_sprite-source-files/finance.svg",
+	"images/_sprite-source-files/group.svg": "./source/images/_sprite-source-files/group.svg",
+	"images/_sprite-source-files/group_add.svg": "./source/images/_sprite-source-files/group_add.svg",
 	"images/_sprite-source-files/inspections.svg": "./source/images/_sprite-source-files/inspections.svg",
 	"images/_sprite-source-files/inventory.svg": "./source/images/_sprite-source-files/inventory.svg",
 	"images/_sprite-source-files/leases.svg": "./source/images/_sprite-source-files/leases.svg",
@@ -736,6 +840,7 @@ var map = {
 	"images/_sprite-source-files/plus-circle-2.svg": "./source/images/_sprite-source-files/plus-circle-2.svg",
 	"images/_sprite-source-files/plus-circle.svg": "./source/images/_sprite-source-files/plus-circle.svg",
 	"images/_sprite-source-files/properties.svg": "./source/images/_sprite-source-files/properties.svg",
+	"images/_sprite-source-files/property_manager.svg": "./source/images/_sprite-source-files/property_manager.svg",
 	"images/_sprite-source-files/reports.svg": "./source/images/_sprite-source-files/reports.svg",
 	"images/_sprite-source-files/rss.svg": "./source/images/_sprite-source-files/rss.svg",
 	"images/_sprite-source-files/settings.svg": "./source/images/_sprite-source-files/settings.svg",
