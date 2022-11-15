@@ -381,6 +381,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/logout.svg":
+/*!*******************************************************!*\
+  !*** ./source/images/_sprite-source-files/logout.svg ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "logout-usage",
+      viewBox: "0 0 18 18",
+      url: __webpack_require__.p + "sprite.artifact.svg#logout-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/message-icon.svg":
 /*!*************************************************************!*\
   !*** ./source/images/_sprite-source-files/message-icon.svg ***!
@@ -674,6 +693,7 @@ var map = {
 	"./inventory.svg": "./source/images/_sprite-source-files/inventory.svg",
 	"./leases.svg": "./source/images/_sprite-source-files/leases.svg",
 	"./linkedin.svg": "./source/images/_sprite-source-files/linkedin.svg",
+	"./logout.svg": "./source/images/_sprite-source-files/logout.svg",
 	"./message-icon.svg": "./source/images/_sprite-source-files/message-icon.svg",
 	"./minus-circle.svg": "./source/images/_sprite-source-files/minus-circle.svg",
 	"./open_in_new.svg": "./source/images/_sprite-source-files/open_in_new.svg",
@@ -708,6 +728,7 @@ var map = {
 	"images/_sprite-source-files/inventory.svg": "./source/images/_sprite-source-files/inventory.svg",
 	"images/_sprite-source-files/leases.svg": "./source/images/_sprite-source-files/leases.svg",
 	"images/_sprite-source-files/linkedin.svg": "./source/images/_sprite-source-files/linkedin.svg",
+	"images/_sprite-source-files/logout.svg": "./source/images/_sprite-source-files/logout.svg",
 	"images/_sprite-source-files/message-icon.svg": "./source/images/_sprite-source-files/message-icon.svg",
 	"images/_sprite-source-files/minus-circle.svg": "./source/images/_sprite-source-files/minus-circle.svg",
 	"images/_sprite-source-files/open_in_new.svg": "./source/images/_sprite-source-files/open_in_new.svg",
