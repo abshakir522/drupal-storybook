@@ -138,8 +138,8 @@ const COLORS = {
     "on-light": "#1b1b1b",
     "on-dark": "#ffffff",
     link: "#010000",
-    "link-hover": "#5149FF",
-    "link-active": "#5149FF",
+    "link-hover": "#0096FF",
+    "link-active": "#0096FF",
     "link-visited": "#205493"
   },
   background: {

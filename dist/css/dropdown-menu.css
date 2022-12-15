@@ -72,10 +72,10 @@
   color: #010000;
 }
 .c-dropdown-menu > .c-dropdown-menu__item > button.c-dropdown-menu__link:hover, .c-dropdown-menu > .c-dropdown-menu__item > button.c-dropdown-menu__link:focus {
-  color: #5149FF;
+  color: #0096FF;
 }
 .c-dropdown-menu > .c-dropdown-menu__item > button.c-dropdown-menu__link:active {
-  color: #5149FF;
+  color: #0096FF;
 }
 
 .c-dropdown-menu__item {

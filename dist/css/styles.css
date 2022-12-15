@@ -381,10 +381,10 @@ a:focus:not(:focus-visible) {
   outline-color: transparent;
 }
 a:hover, a:focus {
-  color: #5149FF;
+  color: #0096FF;
 }
 a:active {
-  color: #5149FF;
+  color: #0096FF;
 }
 @media print {
   a, a:visited {
@@ -3202,7 +3202,7 @@ ul.toolbar-menu li {
 .c-pager__link--last:hover,
 .c-pager__link--last:focus {
   background-color: transparent;
-  color: #5149FF;
+  color: #0096FF;
   text-decoration: underline;
 }
 .c-pager__link--first:active,
@@ -3210,7 +3210,7 @@ ul.toolbar-menu li {
 .c-pager__link--next:active,
 .c-pager__link--last:active {
   background-color: transparent;
-  color: #5149FF;
+  color: #0096FF;
   text-decoration: underline;
 }
 
@@ -3266,7 +3266,7 @@ ul.toolbar-menu li {
   text-decoration: none;
 }
 .c-readmore-link:hover path, .c-readmore-link:focus path {
-  fill: #5149FF;
+  fill: #0096FF;
 }
 
 .c-readmore-link__icon {

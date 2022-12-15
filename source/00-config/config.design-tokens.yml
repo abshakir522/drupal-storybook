@@ -103,8 +103,8 @@ gesso:
       on-light: grayscale.gray-7
       on-dark: grayscale.white
       link: '#010000'
-      link-hover: '#5149FF'
-      link-active: '#5149FF'
+      link-hover: '#0096FF'
+      link-active: '#0096FF'
       link-visited: brand.blue.dark
     background:
       site: grayscale.white

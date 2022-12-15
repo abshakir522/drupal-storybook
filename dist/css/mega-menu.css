@@ -47,10 +47,10 @@
   color: #010000;
 }
 .c-mega-menu > .c-mega-menu__item > .c-mega-menu__link:hover, .c-mega-menu > .c-mega-menu__item > .c-mega-menu__link:focus {
-  color: #5149FF;
+  color: #0096FF;
 }
 .c-mega-menu > .c-mega-menu__item > .c-mega-menu__link:active {
-  color: #5149FF;
+  color: #0096FF;
 }
 .c-mega-menu > .c-mega-menu__item button.c-mega-menu__link {
   outline: 2px solid transparent;
