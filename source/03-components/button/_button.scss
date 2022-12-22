@@ -131,7 +131,7 @@
     }
     background-color: gesso-color(zy, base);
     color: gesso-color(zy, light);
-    &:not([disabled]):hover, &:not([disabled]):focus {
+    &:not([disabled]):hover {
         background-color: gesso-color(zy, 'base-hover');
         color: gesso-color(zy, light);
     }
