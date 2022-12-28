@@ -1,3 +1,7 @@
+{% if description.content is not empty %}
+  {% set tooltipParent = true %}
+{% endif %}
+
 {% set classes = [
   'c-fieldset',
   required or is_required ? 'is-required' : '',
@@ -36,9 +40,25 @@
 
 <fieldset {{ add_attributes(attributes_to_add) }}>
   {#  Always wrap fieldset legends in a <span> for CSS positioning. #}
+
+{% if tooltipParent %}
+  <div class="label-and-info-wrapper">
+{% endif %}
   <legend {{ add_attributes({class: 'c-fieldset__legend'}, 'legend.attributes') }}>
     <span {{ add_attributes({class: legend_span_classes}, 'legend_span.attributes') }}>{{ legend.title }}</span>
   </legend>
+  {% if description.content %}
+      <div {{ add_attributes({class: 'c-fieldset__description description-tooltip margin-0', id: id}, 'description.attributes') }} data-tippy-content="{{ description.content }}" data-placement="right" >
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="red" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.00033 13.1667C9.23644 13.1667 9.43449 13.0867 9.59449 12.9267C9.75394 12.7672 9.83366 12.5695 9.83366 12.3334V8.97919C9.83366 8.74308 9.75394 8.54863 9.59449 8.39585C9.43449 8.24308 9.23644 8.16669 9.00033 8.16669C8.76421 8.16669 8.56644 8.24641 8.40699 8.40585C8.24699 8.56585 8.16699 8.76391 8.16699 9.00002V12.3542C8.16699 12.5903 8.24699 12.7847 8.40699 12.9375C8.56644 13.0903 8.76421 13.1667 9.00033 13.1667ZM9.00033 6.50002C9.23644 6.50002 9.43449 6.42002 9.59449 6.26002C9.75394 6.10058 9.83366 5.9028 9.83366 5.66669C9.83366 5.43058 9.75394 5.23252 9.59449 5.07252C9.43449 4.91308 9.23644 4.83335 9.00033 4.83335C8.76421 4.83335 8.56644 4.91308 8.40699 5.07252C8.24699 5.23252 8.16699 5.43058 8.16699 5.66669C8.16699 5.9028 8.24699 6.10058 8.40699 6.26002C8.56644 6.42002 8.76421 6.50002 9.00033 6.50002ZM9.00033 17.3334C7.84755 17.3334 6.76421 17.1145 5.75033 16.6767C4.73644 16.2395 3.85449 15.6459 3.10449 14.8959C2.35449 14.1459 1.76088 13.2639 1.32366 12.25C0.885881 11.2361 0.666992 10.1528 0.666992 9.00002C0.666992 7.84724 0.885881 6.76391 1.32366 5.75002C1.76088 4.73613 2.35449 3.85419 3.10449 3.10419C3.85449 2.35419 4.73644 1.7603 5.75033 1.32252C6.76421 0.885298 7.84755 0.666687 9.00033 0.666687C10.1531 0.666687 11.2364 0.885298 12.2503 1.32252C13.2642 1.7603 14.1462 2.35419 14.8962 3.10419C15.6462 3.85419 16.2398 4.73613 16.677 5.75002C17.1148 6.76391 17.3337 7.84724 17.3337 9.00002C17.3337 10.1528 17.1148 11.2361 16.677 12.25C16.2398 13.2639 15.6462 14.1459 14.8962 14.8959C14.1462 15.6459 13.2642 16.2395 12.2503 16.6767C11.2364 17.1145 10.1531 17.3334 9.00033 17.3334Z" fill="#667085"/>
+        </svg>
+      </div>
+  {% endif %}
+{% if tooltipParent %}
+  </div>
+{% endif %} 
+
+
   <div class="c-fieldset__content">
     {% if errors %}
       <div class="c-fieldset__errors">{{ errors }}</div>
@@ -54,8 +74,6 @@
       <span class="c-fieldset__suffix">{{ suffix }}</span>
     {% endif %}
 
-    {% if description.content %}
-      <div {{ add_attributes({class: 'c-fieldset__description', id: id}, 'description.attributes') }}>{{ description.content }}</div>
-    {% endif %}
+    
   </div>
 </fieldset>

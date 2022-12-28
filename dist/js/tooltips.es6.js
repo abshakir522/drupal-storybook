@@ -5724,7 +5724,8 @@ __webpack_require__.r(__webpack_exports__);
 
       if (tipyPlacement != undefined) {
         instance.setProps({
-          placement: tipyPlacement
+          placement: tipyPlacement,
+          maxWidth: 200
         });
       }
     });

@@ -10,7 +10,8 @@ Drupal.behaviors.sideMenu = {
         const tipyPlacement = instance.reference.dataset.placement;
         if (tipyPlacement != undefined) {
             instance.setProps({
-                placement: tipyPlacement
+                placement: tipyPlacement,
+                maxWidth: 200,
             });
         }
     });
