@@ -153,7 +153,9 @@
             background-color: gesso-color(zy, 'secondary-hover');
             color: gesso-color(zy, 'gray-scale-60');
         }
-
+        &.border-dashed {
+          border: 1px dashed #98a2b3;
+        }
     }
     &.button--tertiary {
         background-color: transparent;
