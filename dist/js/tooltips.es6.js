@@ -5729,6 +5729,14 @@ __webpack_require__.r(__webpack_exports__);
         });
       }
     });
+    const instance = (0,tippy_js__WEBPACK_IMPORTED_MODULE_2__["default"])('#edit-field-start-date-0-value input', {
+      content: 'Start by adding start date of the lease',
+      placement: 'left',
+      maxWidth: 200
+    });
+    setTimeout(function () {
+      instance[0].show();
+    }, 1000);
   }
 
 };
