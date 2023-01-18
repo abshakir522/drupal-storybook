@@ -7,22 +7,24 @@ Drupal.behaviors.sideMenu = {
   attach(context) {
     const tippyInstance = tippy('[data-tippy-content]');
     tippyInstance.forEach(function(instance){
-        const tipyPlacement = instance.reference.dataset.placement;
-        if (tipyPlacement != undefined) {
-            instance.setProps({
-                placement: tipyPlacement,
-                maxWidth: 200,
-            });
-        }
+      const tipyPlacement = instance.reference.dataset.placement;
+      if (tipyPlacement != undefined) {
+          instance.setProps({
+              placement: tipyPlacement,
+              maxWidth: 200,
+          });
+      }
     });
-    const instance = tippy('#edit-field-start-date-0-value input', {
-      content: 'Start by adding start date of the lease',
-      placement: 'left',
-      maxWidth: 200
-    });
-    setTimeout(function() {
-      instance[0].show();
-    }, 1000);
+    if (document.getElementById('edit-field-start-date-0-value') != null) {
+      const instance = tippy('#edit-field-start-date-0-value input', {
+        content: 'Start by adding start date of the lease',
+        placement: 'left',
+        maxWidth: 200
+      });
+      setTimeout(function() {
+        instance[0].show();
+      }, 1000);
+    }
   },
 };
 
