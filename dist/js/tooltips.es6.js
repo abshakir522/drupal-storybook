@@ -5729,7 +5729,6 @@ __webpack_require__.r(__webpack_exports__);
         });
       }
     });
-    console.log();
 
     if (document.getElementById('edit-field-start-date-0-value') != null) {
       const instance = (0,tippy_js__WEBPACK_IMPORTED_MODULE_2__["default"])('#edit-field-start-date-0-value input', {
