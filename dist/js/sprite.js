@@ -381,6 +381,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/help.svg":
+/*!*****************************************************!*\
+  !*** ./source/images/_sprite-source-files/help.svg ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "help-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#help-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/inspections.svg":
 /*!************************************************************!*\
   !*** ./source/images/_sprite-source-files/inspections.svg ***!
@@ -685,6 +704,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/suggestions.svg":
+/*!************************************************************!*\
+  !*** ./source/images/_sprite-source-files/suggestions.svg ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "suggestions-usage",
+      viewBox: "0 0 20 20",
+      url: __webpack_require__.p + "sprite.artifact.svg#suggestions-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/tenancies.svg":
 /*!**********************************************************!*\
   !*** ./source/images/_sprite-source-files/tenancies.svg ***!
@@ -788,6 +826,7 @@ var map = {
 	"./finance.svg": "./source/images/_sprite-source-files/finance.svg",
 	"./group.svg": "./source/images/_sprite-source-files/group.svg",
 	"./group_add.svg": "./source/images/_sprite-source-files/group_add.svg",
+	"./help.svg": "./source/images/_sprite-source-files/help.svg",
 	"./inspections.svg": "./source/images/_sprite-source-files/inspections.svg",
 	"./inventory.svg": "./source/images/_sprite-source-files/inventory.svg",
 	"./leases.svg": "./source/images/_sprite-source-files/leases.svg",
@@ -804,6 +843,7 @@ var map = {
 	"./reports.svg": "./source/images/_sprite-source-files/reports.svg",
 	"./rss.svg": "./source/images/_sprite-source-files/rss.svg",
 	"./settings.svg": "./source/images/_sprite-source-files/settings.svg",
+	"./suggestions.svg": "./source/images/_sprite-source-files/suggestions.svg",
 	"./tenancies.svg": "./source/images/_sprite-source-files/tenancies.svg",
 	"./tenant.svg": "./source/images/_sprite-source-files/tenant.svg",
 	"./tenant1.svg": "./source/images/_sprite-source-files/tenant1.svg",
@@ -828,6 +868,7 @@ var map = {
 	"images/_sprite-source-files/finance.svg": "./source/images/_sprite-source-files/finance.svg",
 	"images/_sprite-source-files/group.svg": "./source/images/_sprite-source-files/group.svg",
 	"images/_sprite-source-files/group_add.svg": "./source/images/_sprite-source-files/group_add.svg",
+	"images/_sprite-source-files/help.svg": "./source/images/_sprite-source-files/help.svg",
 	"images/_sprite-source-files/inspections.svg": "./source/images/_sprite-source-files/inspections.svg",
 	"images/_sprite-source-files/inventory.svg": "./source/images/_sprite-source-files/inventory.svg",
 	"images/_sprite-source-files/leases.svg": "./source/images/_sprite-source-files/leases.svg",
@@ -844,6 +885,7 @@ var map = {
 	"images/_sprite-source-files/reports.svg": "./source/images/_sprite-source-files/reports.svg",
 	"images/_sprite-source-files/rss.svg": "./source/images/_sprite-source-files/rss.svg",
 	"images/_sprite-source-files/settings.svg": "./source/images/_sprite-source-files/settings.svg",
+	"images/_sprite-source-files/suggestions.svg": "./source/images/_sprite-source-files/suggestions.svg",
 	"images/_sprite-source-files/tenancies.svg": "./source/images/_sprite-source-files/tenancies.svg",
 	"images/_sprite-source-files/tenant.svg": "./source/images/_sprite-source-files/tenant.svg",
 	"images/_sprite-source-files/tenant1.svg": "./source/images/_sprite-source-files/tenant1.svg",
