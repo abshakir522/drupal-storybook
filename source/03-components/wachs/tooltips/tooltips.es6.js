@@ -15,16 +15,16 @@ Drupal.behaviors.sideMenu = {
           });
       }
     });
-    if (document.getElementById('edit-field-start-date-0-value') != null) {
-      const instance = tippy('#edit-field-start-date-0-value input', {
-        content: 'Start by adding start date of the lease',
-        placement: 'left',
-        maxWidth: 200
-      });
-      setTimeout(function() {
-        instance[0].show();
-      }, 1000);
-    }
+    // if (document.getElementById('edit-field-start-date-0-value') != null) {
+    //   const instance = tippy('#edit-field-start-date-0-value input', {
+    //     content: 'Start by adding start date of the lease',
+    //     placement: 'left',
+    //     maxWidth: 200
+    //   });
+    //   setTimeout(function() {
+    //     instance[0].show();
+    //   }, 1000);
+    // }
   },
 };
 
