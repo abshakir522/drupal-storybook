@@ -3,7 +3,7 @@
 header {
     position: sticky;
     top: 0;
-    background-color: #ffffff;
+    background-color: var(--headerbg, #ffffff);
     z-index: 2;
 }
 // .l-header {}

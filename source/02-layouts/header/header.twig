@@ -16,7 +16,7 @@
 <header {{ add_attributes({
   'class': classes,
   'role': 'banner'
-}) }}>
+}) }} style="--headerbg: {{ bg_color }}; --headercolor: {{ text_color }};">
   {% if has_constrain %}
     <div {{ add_attributes({ 'class': constrain_classes }) }}>
   {% endif %}

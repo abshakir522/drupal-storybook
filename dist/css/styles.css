@@ -1041,7 +1041,7 @@ video {
 header {
   position: sticky;
   top: 0;
-  background-color: #ffffff;
+  background-color: var(--headerbg, #ffffff);
   z-index: 2;
 }
 
@@ -1557,6 +1557,10 @@ ul.toolbar-menu li {
   background-color: #fff;
   color: #7E889C;
   border-color: transparent;
+}
+.button.button--tertiary:not([disabled]):hover, .c-button.button--tertiary:not([disabled]):hover {
+  background-color: #e4e7ec;
+  color: #475467;
 }
 
 .mdl-stepper .mdl-step {
