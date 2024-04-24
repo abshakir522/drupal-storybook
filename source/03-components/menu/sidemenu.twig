@@ -53,6 +53,9 @@
       {% if link_class %}
         {% set link_classes = link_classes|merge(link_class) %}
       {% endif %}
+      {% if item.url.routeName == '<nolink>' %}
+        {% set item_classes = item_classes|merge(['no-link']) %}
+      {% endif %}
 
       {% set additional_item_attributes = {
         'class': item_classes
@@ -61,7 +64,6 @@
       {% set link_attributes = {
         'class': link_classes
       } %}
-
       <li {{ add_attributes(additional_item_attributes) }} data-tippy-content="{{ item.title|striptags|trim }}" data-placement="right">
         {% if item.url == '<button>' %}
           {# This is needed to work in Storybook. #}
