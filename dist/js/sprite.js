@@ -438,6 +438,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/images/_sprite-source-files/home.svg":
+/*!*****************************************************!*\
+  !*** ./source/images/_sprite-source-files/home.svg ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "home-usage",
+      viewBox: "0 0 19 17",
+      url: __webpack_require__.p + "sprite.artifact.svg#home-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./source/images/_sprite-source-files/inspections.svg":
 /*!************************************************************!*\
   !*** ./source/images/_sprite-source-files/inspections.svg ***!
@@ -867,6 +886,7 @@ var map = {
 	"./group.svg": "./source/images/_sprite-source-files/group.svg",
 	"./group_add.svg": "./source/images/_sprite-source-files/group_add.svg",
 	"./help.svg": "./source/images/_sprite-source-files/help.svg",
+	"./home.svg": "./source/images/_sprite-source-files/home.svg",
 	"./inspections.svg": "./source/images/_sprite-source-files/inspections.svg",
 	"./inventory.svg": "./source/images/_sprite-source-files/inventory.svg",
 	"./leases.svg": "./source/images/_sprite-source-files/leases.svg",
@@ -911,6 +931,7 @@ var map = {
 	"images/_sprite-source-files/group.svg": "./source/images/_sprite-source-files/group.svg",
 	"images/_sprite-source-files/group_add.svg": "./source/images/_sprite-source-files/group_add.svg",
 	"images/_sprite-source-files/help.svg": "./source/images/_sprite-source-files/help.svg",
+	"images/_sprite-source-files/home.svg": "./source/images/_sprite-source-files/home.svg",
 	"images/_sprite-source-files/inspections.svg": "./source/images/_sprite-source-files/inspections.svg",
 	"images/_sprite-source-files/inventory.svg": "./source/images/_sprite-source-files/inventory.svg",
 	"images/_sprite-source-files/leases.svg": "./source/images/_sprite-source-files/leases.svg",
