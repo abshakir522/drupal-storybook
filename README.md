@@ -1,12 +1,10 @@
-# Zyrous Gesso
+# Gesso custom theme
 
-Zyrous base theme package is hosted on [Packagist] (https://packagist.org/packages/zyrous/drupal-theme-base)
-Zyrous base theme repo is hosted on [Bitbucket] (https://bitbucket.org/zyrous/drupal-theme)
-Zyrous Gesso is a [Sass](http://sass-lang.com/)-based starter theme that outputs
+This is a [Sass](http://sass-lang.com/)-based starter theme that outputs
 accessible HTML5 markup. It uses a mobile-first responsive approach and
 leverages [SMACSS](https://smacss.com/) to organize styles. This encourages a
 component-based approach to theming through the creation of discrete, reusable
-UI elements. Gesso is heavily integrated with
+UI elements. This custom theme is cloned from the [Gesso](https://www.drupal.org/project/gesso) contirbuted theme. Gesso is heavily integrated with
 [Storybook](https://storybook.js.org/) and the [Component
 Libraries](https://www.drupal.org/project/components) module, allowing Drupal
 and Storybook to share the same markup.
